@@ -1,0 +1,13 @@
+{
+  "id": "urn:ngsi-ld:PortGateEntry:1",
+  "type": "PortGateEntry",
+  "BarrierOpen": true,
+  "BarrierAutomatic": true,
+  "BarrierManual": false,
+  "Galibo": true,
+  "CAS_Blocked": false,
+  "CAS_AlarmGamma": false,
+  "CAS_AlarmNeutrons": false,
+  "LPR_TruckPlate": "5387FDM",
+  "LPR_TruckPlateReliability": 89
+}

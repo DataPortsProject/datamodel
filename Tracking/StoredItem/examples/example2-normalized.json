@@ -1,0 +1,219 @@
+    {
+        "id": "urn:ngsi-ld:VPF:StoredItem:release",
+        "type": "StoredItem",
+        "ID": {
+            "type": "Text",
+            "value": "S202206111.1@T11111111@46024@storedItem",
+            "metadata": {}
+        },
+        "_id": {
+            "type": "Text",
+            "value": "62b43cbf459e4dddeda650f2",
+            "metadata": {}
+        },
+        "agent": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "A11111111@46024@office",
+                "role": "agent",
+                "organization": {
+                    "code": "A11111111",
+                    "name": "AGENTE MARÍTIMO"
+                },
+                "office": {
+                    "code": "46024",
+                    "name": "VALÈNCIA"
+                },
+                "address": {
+                    "city": "VALÈNCIA",
+                    "postalCode": "46024",
+                    "province": "VALENCIA/VALÈNCIA"
+                }
+            },
+            "metadata": {}
+        },
+        "assetType": {
+            "type": "Text",
+            "value": "storedItem",
+            "metadata": {}
+        },
+        "depositary": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "T11111111@46024@office",
+                "role": "depositary",
+                "organization": {
+                    "code": "T11111111",
+                    "name": "TERMINAL"
+                },
+                "office": {
+                    "code": "46024",
+                    "name": "VALÈNCIA"
+                },
+                "address": {
+                    "city": "VALÈNCIA",
+                    "postalCode": "46024",
+                    "province": "VALENCIA/VALÈNCIA"
+                }
+            },
+            "metadata": {}
+        },
+        "depositor": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "CSLU@office"
+            },
+            "metadata": {}
+        },
+        "gateOutOperations": {
+            "type": "StructuredValue",
+            "value": [
+                {
+                    "type": "gateOut",
+                    "value": "S202206111.1",
+                    "status": "finished",
+                    "eta": "2022-06-11T23:00+01:00",
+                    "ata": "2022-06-11T23:08:00+01:00",
+                    "atd": "2022-06-11T23:28:00+01:00",
+                    "confirmedDate": "2022-06-11T23:15:00+01:00",
+                    "validFrom": "2022-06-11T23:00+01:00",
+                    "expiryDate": "2022-06-14T23:00+01:00",
+                    "eventFunction": "confirmed",
+                    "authorisedParty": {
+                        "ID": "F11111111@46024@office",
+                        "organization": {
+                            "code": "F11111111",
+                            "name": "FORWARDER TRANSITARIA"
+                        },
+                        "office": {
+                            "code": "46024",
+                            "name": "VALÈNCIA"
+                        },
+                        "address": {
+                            "city": "VALÈNCIA",
+                            "postalCode": "46024",
+                            "province": "VALENCIA/VALÈNCIA"
+                        }
+                    },
+                    "location": {
+                        "location": "ESVLC",
+                        "locationName": "VALENCIA",
+                        "address": {
+                            "street": "Terminal",
+                            "city": "Valencia",
+                            "postalCode": "46024"
+                        },
+                        "position": {
+                            "type": "Point",
+                            "coordinates": [
+                                39.47534441,
+                                "-0.375657170"
+                            ]
+                        }
+                    },
+                    "transport": {
+                        "ID": "006@W44444444@46024@transport",
+                        "transportID": "006",
+                        "identification": {
+                            "code": "ABC1234"
+                        },
+                        "carrier": {
+                            "ID": "W44444444@46024@office",
+                            "organization": {
+                                "code": "W44444444",
+                                "name": "TRANSPORTISTA"
+                            },
+                            "office": {
+                                "code": "46024",
+                                "name": "VALÈNCIA"
+                            },
+                            "address": {
+                                "city": "VALÈNCIA",
+                                "postalCode": "46024",
+                                "province": "VALENCIA/VALÈNCIA"
+                            }
+                        }
+                    },
+                    "transportUnits": [
+                        {
+                            "transportUnitID": "TRLU123456",
+                            "eventFunction": "confirmed",
+                            "containerType": {
+                                "code": "20GP"
+                            },
+                            "shipment": {
+                                "ID": "S202206111@CSLU@shipment",
+                                "shipmentID": "S202206111",
+                                "carrier": {
+                                    "ID": "CSLU@office"
+                                }
+                            }
+                        }
+                    ],
+                    "unitsCount": 1
+                }
+            ],
+            "metadata": {}
+        },
+        "lastTrackableEvent": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "2022-06-11T22:15:00.000Z@T11111111@46024@event",
+                "name": "storedItem",
+                "eventType": "gateOut",
+                "location": {
+                    "address": {
+                        "street": "Terminal",
+                        "city": "Valencia",
+                        "postalCode": "46024"
+                    },
+                    "position": {
+                        "type": "Point",
+                        "coordinates": [
+                            39.47534441,
+                            "-0.375657170"
+                        ]
+                    },
+                    "location": "ESVLC",
+                    "locationName": "VALENCIA"
+                },
+                "performedTime": "2022-06-11T23:15:00+01:00"
+            },
+            "metadata": {}
+        },
+        "orderDate": {
+            "type": "Text",
+            "value": "2022-06-11T12:52:00+01:00",
+            "metadata": {}
+        },
+        "reportedByID": {
+            "type": "Text",
+            "value": "T11111111@46024@office",
+            "metadata": {}
+        },
+        "reportedByRole": {
+            "type": "Text",
+            "value": "depositary",
+            "metadata": {}
+        },
+        "status": {
+            "type": "Text",
+            "value": "finished",
+            "metadata": {}
+        },
+        "storedItemID": {
+            "type": "Text",
+            "value": "S202206111.1",
+            "metadata": {}
+        },
+        "userId": {
+            "type": "Text",
+            "value": "6253213b42895e74bf030a50",
+            "metadata": {}
+        },
+        "version": {
+            "type": "Text",
+            "value": "0.0",
+            "metadata": {}
+        }
+    }

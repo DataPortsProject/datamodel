@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Cargo/Container/schema.json",
+  "title": "DataPorts - Container schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "ID": {
+          "type": "string",
+          "description": "Unique ID of container"
+        },
+        "arrival": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time of the container entry to yard"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of container"
+        },
+        "size": {
+          "type": "string",
+          "description": "Size of container (20''/40'')"
+        },
+        "loaded": {
+          "type": "number",
+          "description": "container is laden with cargo or empty"
+        },
+        "voyageCode": {
+          "type": "string",
+          "description": "Voyage code"
+        },
+        "vesselName ": {
+          "type": "string",
+          "description": "Name of vessel"
+        },
+        "companyID": {
+          "type": "string",
+          "description": "Company - shipping line ID"
+        },
+        "agentID": {
+          "type": "string",
+          "description": "Company - shipping agent ID"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

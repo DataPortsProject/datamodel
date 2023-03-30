@@ -1,0 +1,35 @@
+    {
+        "id": "urn:ngsi-ld:OTE:TravelTime",
+        "type": "TravelTime",
+        "duration": {
+            "type": "Number",
+            "value": 153,
+            "metadata": {}
+        },
+        "timestamp": {
+            "type": "Text",
+            "value": "2021-07-01T00:00:00.000",
+            "metadata": {}
+        },
+        "travelPath": {
+            "type": "StructuredValue",
+            "value": {
+                "pathID": 3,
+                "pathName": "Lagada - Platia Dimokratias",
+                "originDevice": {
+                    "pathOriginDeviceID": 11,
+                    "pathOriginDeviceName": "iTravel-1-Lagada",
+                    "pathOriginDeviceLat": 40.647450413,
+                    "pathOriginDeviceLon": 22.935221269
+                },
+                "destinationDevice": {
+                    "pathDestinationDeviceID": 17,
+                    "pathDestinationDeviceName": "iTravel-1-Dimokratias Sq.",
+                    "pathDestinationDeviceLat": 40.640026233,
+                    "pathDestinationDeviceLon": 22.936122599
+                },
+                "polyline": "22.93525"
+            },
+            "metadata": {}
+        }
+    }

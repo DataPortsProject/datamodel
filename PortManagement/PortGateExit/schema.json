@@ -1,0 +1,215 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/PortGateExit/schema.json",
+  "title": "DataPorts - PortGateExit schema",
+  "description": "Data of the access through the exit gate, Gate open or closed, data of the recognition of the vehicle's license plate carried out.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "lane": {
+          "type": "number",
+          "description": "Lane"
+        },
+        "startTime": {
+          "type": "string",
+          "description": "Event start time"
+        },
+        "endTime": {
+          "type": "string",
+          "description": "Event end time"
+        },        
+        "CAS_alarm": {
+          "type": "boolean",
+          "description": "Radiation Alarm"
+        },
+        "CAS_alarmGamma": {
+          "type": "boolean",
+          "description": "Gamma alarm"
+        },
+        "CAS_alarmGammaNeutrons": {
+          "type": "boolean",
+          "description": "Gamma or neutrons alarm"
+        },
+        "CAS_alarmNeutrons": {
+          "type": "boolean",
+          "description": "Neutrons alarm"
+        },
+        "CAS_RPM_ok": {
+          "type": "boolean",
+          "description": "Radiation ok"
+        },
+        "entry_barrierOpen": {
+          "type": "boolean",
+          "description": "First barrier open"
+        },
+        "entry_barrierClosed": {
+          "type": "boolean",
+          "description": "First barrier closed"
+        },
+        "entry_laneClosed": {
+          "type": "boolean",
+          "description": "Lane closed"
+        },
+        "entry_spireDetectionB0": {
+          "type": "boolean",
+          "description": "Spire B0 detection"
+        },
+        "entry_spireDetectionBS": {
+          "type": "boolean",
+          "description": "Spire BS detection"
+        },
+        "entry_forcedEntry": {
+          "type": "boolean",
+          "description": "Manual barrier open"
+        },
+        "bulk_bulkDetected": {
+          "type": "boolean",
+          "description": "Bulk truck detected"
+        },
+        "LPR_alarmManualCod": {
+          "type": "boolean",
+          "description": "Manual truck plate request"
+        },
+        "LPR_messageOk": {
+          "type": "boolean",
+          "description": "LPR message ok"
+        },
+        "LPR_truckPlate": {
+          "type": "string",
+          "description": "Final truck plate"
+        },
+        "LPR_truckPlateReliability": {
+          "type": "number",
+          "description": "Final truck plate reliability"
+        },
+        "LPR_hitechTruckPlate": {
+          "type": "string",
+          "description": "Hitech truck plate"
+        },
+        "LPR_hitechTruckPlateReliability": {
+          "type": "number",
+          "description": "Hitech truck plate reliability"
+        },
+        "LPR_quercusTruckPlate": {
+          "type": "string",
+          "description": "Quercus truck plate"
+        },
+        "LPR_quercusTruckPlateReliability": {
+          "type": "number",
+          "description": "Quercus truck plate reliability"
+        },
+        "LSP_alarmExitUnauthorised": {
+          "type": "boolean",
+          "description": "Alarm truck exit unauthorised"
+        },
+        "LSP_alarmCommunicationError": {
+          "type": "boolean",
+          "description": "LSP alarm communication error"
+        },
+        "LSP_responseCode": {
+          "type": "string",
+          "description": "LSP response code"
+        },
+        "LSP_responseDescription": {
+          "type": "string",
+          "description": "LSP response description"
+        },
+        "LSP_truckExitAuthorised": {
+          "type": "boolean",
+          "description": "Truck exit authorised"
+        },
+        "LSP_enabled": {
+          "type": "boolean",
+          "description": "LSP enabled"
+        },
+        "OCR_alarmNotReceived": {
+          "type": "boolean",
+          "description": "Alarm OCR message not received"
+        },
+        "OCR_alarmManualCod": {
+          "type": "boolean",
+          "description": "Manual container number request"
+        },
+        "OCR_container1Reliability": {
+          "type": "boolean",
+          "description": "Container 1 number reliability"
+        },
+        "OCR_container2Reliability": {
+          "type": "boolean",
+          "description": "Container 2 number reliability"
+        },
+        "OCR_container1": {
+          "type": "string",
+          "description": "Container 1 number"
+        },
+        "OCR_container2": {
+          "type": "string",
+          "description": "Container 2 number"
+        },
+        "exit_barrierOpen": {
+          "type": "boolean",
+          "description": "Second barrier open"
+        },
+        "exit_barrierClosed": {
+          "type": "boolean",
+          "description": "Second barrier closed"
+        },
+        "exit_laneClosed": {
+          "type": "boolean",
+          "description": "Lane closed"
+        },
+        "exit_CAS_authorised": {
+          "type": "boolean",
+          "description": "Radiation. Truck exit authorised"
+        },
+        "exit_CAS_enabled": {
+          "type": "boolean",
+          "description": "Radiation system enabled"
+        },
+        "exit_spireDetectionF0": {
+          "type": "boolean",
+          "description": "Spire F0 detection"
+        },
+        "exit_spireDetectionF1": {
+          "type": "boolean",
+          "description": "Spire F1 detection"
+        },
+        "exit_forcedEntry": {
+          "type": "boolean",
+          "description": "Manual barrier open"
+        },
+        "exit_LSP_authorised": {
+          "type": "boolean",
+          "description": "LSP. Truck exit authorised"
+        },
+        "exit_LSP_enabled": {
+          "type": "boolean",
+          "description": "LSP system enabled"
+        },
+        "exit_returnRequest": {
+          "type": "boolean",
+          "description": "Return request"
+        },
+        "exit_returnAuthorised": {
+          "type": "boolean",
+          "description": "Return authorised"
+        },
+        "exit_returnLaneEnabled": {
+          "type": "boolean",
+          "description": "Return lane  enabled"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

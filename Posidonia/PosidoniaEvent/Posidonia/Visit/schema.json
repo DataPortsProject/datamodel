@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Posidonia/PosidoniaEvent/Posidonia/Visit/schema.json",
+  "title": "DataPorts - PosidoniaEvent schema",
+  "description": "Data Model that will cover one of the sub-entities used by Posidonia entity.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "visitCode": {
+          "type": "number",
+          "description": "ID of the visit. Numeric (Long)"
+        },
+        "state": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "description": "State code"
+            },
+            "description": {
+              "type": "string",
+              "description": "Description of state code"
+            }
+          }
+        },
+        "ETA": {
+          "type": "number",
+          "description": "Timestamp in millis"
+        },
+        "ETD": {
+          "type": "number",
+          "description": "Timestamp in millis"
+        },
+        "visitNumber": {
+          "type": "string",
+          "description": "Visit number (String)"
+        },
+        "year": {
+          "type": "number",
+          "description": "Year of the visit. Numeric (Long)"
+        },
+        "cargoManifest": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "number",
+              "description": "Year of the manifest"
+            },
+            "code": {
+              "type": "number",
+              "description": "ID of the manifest. Numeric (Long)"
+            },
+            "declarationNumber": {
+              "type": "string",
+              "description": "Declaration number (String)"
+            },
+            "declarationDate": {
+              "type": "number",
+              "description": "Timestamp in millis"
+            },
+            "state": {
+              "type": "string",
+              "description": "State code (String)"
+            }
+          }
+        },
+        "consignee": {
+          "type": "object",
+          "properties": {
+            "consigneeID": {
+              "type": "number",
+              "description": "ID of the Consignee"
+            },
+            "consigneeName": {
+              "type": "string",
+              "description": "Name of the Consignee"
+            },
+            "consigneeCIF": {
+              "type": "string",
+              "description": "ID Number (String)"
+            },
+            "request": {
+              "type": "object",
+              "properties": {
+                "requestID": {
+                  "type": "number",
+                  "description": "ID of the request. Numeric (Long)"
+                },
+                "oldState": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string",
+                      "description": "Code for the old state"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Old State's description"
+                    }
+                  }
+                },
+                "newState": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string",
+                      "description": "Code for the new state"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "New State's description"
+                    }
+                  }
+                },
+                "date": {
+                  "type": "number",
+                  "description": "When it changes to the new state (Date)",
+                  "format": "date-time"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "Supply type ID (String)"
+                },
+                "units": {
+                  "type": "number",
+                  "description": "Number of units requested. Numeric (Double)"
+                },
+                "enterprise": {
+                  "type": "object",
+                  "properties": {
+                    "enterpriseID": {
+                      "type": "number",
+                      "description": "Internal ID of the Enterprise. Numeric (Long)"
+                    },
+                    "enterpriseCIF": {
+                      "type": "number",
+                      "description": "ID Number (String)"
+                    },
+                    "enterpriseName": {
+                      "type": "string",
+                      "description": "Name of the enterprise"
+                    },
+                    "enterprisePhoneNumber": {
+                      "type": "string",
+                      "description": "String"
+                    },
+                    "enterpriseEmail": {
+                      "type": "string",
+                      "description": "String"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "required": ["visitCode", "ETA", "ETD"]
+}

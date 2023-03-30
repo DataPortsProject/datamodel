@@ -1,0 +1,55 @@
+{
+    "_id" :"62b43cbab75a2477a2620a25",
+    "id": "urn:ngsi-ld:TrackableEvent:VPF:3260844992",
+    "type": "TrackableEvent",
+    "reportedByID" : "Z11111111@46024@office",
+    "name" : "shipment",
+    "eventType" : "requested",
+    "eventFunction" : "added",
+    "trackableEntityID" : "R202206082@W44444444@46024@shipment",
+    "performedTime" : "2022-06-23T10:13:14.185Z",
+    "references" : [
+            {
+                    "type" : "shipment",
+                    "value" : "R202206082"
+            },
+            {
+                    "type" : "transport"
+            }
+    ],
+    "shipments" : [
+            {
+                    "ID" : "R202206082@W44444444@46024@shipment",
+                    "requestorReference" : "R202206082",
+                    "transportMode" : "road",
+                    "transportUnitType" : "pallet",
+                    "requestor" : {
+                            "ID" : "Z11111111@46024@office",
+                            "organization" : {
+                                    "code" : "Z11111111",
+                                    "name" : "CARGADOR"
+                            },
+                            "office" : {
+                                    "code" : "46024",
+                                    "name" : "VALÈNCIA"
+                            }
+                    },
+                    "carrier" : {
+                            "ID" : "W44444444@46024@office",
+                            "organization" : {
+                                    "code" : "W44444444",
+                                    "name" : "TRANSPORTISTA"
+                            },
+                            "office" : {
+                                    "code" : "46024",
+                                    "name" : "VALÈNCIA"
+                            }
+                    }
+            }
+    ],
+    "publisher" : "Z11111111@46024@office",
+    "ID" : "2022-06-23T10:13:14.185Z@R202206082@Z11111111@46024@event",
+    "assetType" : "trackableEvent",
+    "version" : "0.0",
+    "userId" : "62531bfbc00922fd58ea3bcc"
+}

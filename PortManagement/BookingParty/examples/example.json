@@ -1,0 +1,7 @@
+{
+  "id": "bookingpart-txrpd309hfhq",
+  "type": "bookingpart",
+  "account": "string",
+  "booking": "string",
+  "role": "string"
+}

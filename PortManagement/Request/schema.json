@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/Request/schema.json",
+  "title": "DataPorts - Request schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "oldState": {
+          "type": "string",
+          "description": "State code"
+        },
+        "newState": {
+          "type": "string",
+          "description": "State code"
+        },
+        "date": {
+          "type": "number",
+          "description": "When it changes to the new state"
+        },
+        "type": {
+          "type": "string",
+          "description": "Supply type ID"
+        },
+        "id": {
+          "type": "number",
+          "description": "ID of the request"
+        },
+        "units": {
+          "type": "number",
+          "description": "Number of units requested"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/ExpectedContainerShipCall/schema.json",
+  "title": "DataPorts - ExpectedContainerShipCall schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "vessel": {
+          "type": "object",
+          "properties": {
+            "shipName": {
+              "type": "string",
+              "description": "Name of the vessel"
+            },
+            "IMO": {
+              "type": "number",
+              "description": "IMO ship ID number"
+            },
+            "shipTypeCategory": {
+              "type": "string",
+              "enum": [
+                "CONTAINER",
+                "GENERAL CARGO NON SPECIALIZED",
+                "LIQUID BULK",
+                "DRY BULK",
+                "CRUISE"
+              ],
+              "description": "Description of vessel category"
+            },
+            "shipTypeClass": {
+              "type": "string",
+              "enum": [
+                "MULTI-DECKER",
+                "CHEMICAL TANKER",
+                "FULL CONTAINER",
+                "OIL TANKER",
+                "BULK CARRIER",
+                "LG TANKER"
+              ],
+              "description": "Description of vessel class"
+            }
+          },
+          "description": "Container ship vessel"
+        },
+        "ETA": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Estimated date/time of ship docking"
+        },
+        "moves": {
+          "type": "number",
+          "description": "Estimated number of crane moves"
+        },
+        "voCode": {
+          "type": "string",
+          "description": "Voyage code (unique ID of a voyage)"
+        },
+        "sl": {
+          "type": "string",
+          "description": "Shipping line"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "shipName",
+    "shipTypeCategory",
+    "shipTypeClass",
+    "vessel",
+    "ETA",
+    "moves",
+    "voCode",
+    "sl"
+  ]
+}

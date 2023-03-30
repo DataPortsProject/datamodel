@@ -1,0 +1,13 @@
+{
+	"id": "urn:ngsi-ld:TrackableEvent:MRKU7166548:BC000022890:1646832458000",
+	"type": "TrackableEvent",
+	"attributes": [{
+		"name": "doorOpening",
+		"value": "true"
+	}],
+	"eventType": "doorOpened",
+	"performedTime": "2022-03-09T13:27:38Z",
+	"transportUnits": [{
+		"transportUnitID": "MRKU7166548"
+	}]
+}

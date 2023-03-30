@@ -1,0 +1,49 @@
+{
+    "id": "urn:ngsi-ld:PortGateEntry:1",
+    "type": "PortGateEntry",
+    "BarrierAutomatic": {
+        "type": "Boolean",
+        "value": true,
+        "metadata": {}
+    },
+    "BarrierManual": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {}
+    },
+    "BarrierOpen": {
+        "type": "Boolean",
+        "value": true,
+        "metadata": {}
+    },
+    "CAS_AlarmGamma": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {}
+    },
+    "CAS_AlarmNeutrons": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {}
+    },
+    "CAS_Blocked": {
+        "type": "Boolean",
+        "value": false,
+        "metadata": {}
+    },
+    "Galibo": {
+        "type": "Boolean",
+        "value": true,
+        "metadata": {}
+    },
+    "LPR_TruckPlate": {
+        "type": "Text",
+        "value": "5387FDM",
+        "metadata": {}
+    },
+    "LPR_TruckPlateReliability": {
+        "type": "Number",
+        "value": 89,
+        "metadata": {}
+    }
+}

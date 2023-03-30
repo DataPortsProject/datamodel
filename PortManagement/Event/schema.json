@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/Event/schema.json",
+  "title": "DataPorts - Event schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique id of the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the event"
+        },
+        "equipment": {
+          "type": "string",
+          "description": "Equipment number"
+        },
+        "device": {
+          "type": "string",
+          "description": "IoT device serial number"
+        },
+        "firmwareVersion": {
+          "type": "string",
+          "description": "IoT device firmware version"
+        },
+        "communicationDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "IoT device communication date with acquisition server"
+        },
+        "communicationType": {
+          "type": "string",
+          "description": "Type of communication"
+        },
+        "lastmodifiedDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last modification date"
+        },
+        "eventDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of occurrence of the event"
+        },
+        "eventType": {
+          "type": "string",
+          "description": "Type of event"
+        },
+        "sensorName": {
+          "type": "string",
+          "description": "Sensor name"
+        },
+        "sensorValue": {
+          "type": "string",
+          "description": "Sensor value"
+        },
+        "sensorValues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": "",
+            "minItems": 0
+          },
+          "description": "Array of sensor values"
+        },
+        "gpsLatitude": {
+          "type": "number",
+          "description": "Geolocation latitude"
+        },
+        "gpsLongitude": {
+          "type": "number",
+          "description": "Geolocation longitude"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

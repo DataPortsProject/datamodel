@@ -1,0 +1,55 @@
+{
+    "@context": {
+        "ETA": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#ETA",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "ETD": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#ETD",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "ID": "https://dataports-project.eu/dataModel.Cargo#ID",
+        "account": "https://dataports-project.eu/dataModel.Cargo#account",
+        "agentID": "https://dataports-project.eu/dataModel.Cargo#agentID",
+        "arrival": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#arrival",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "category": "https://dataports-project.eu/dataModel.Cargo#category",
+        "code": "https://dataports-project.eu/dataModel.Cargo#code",
+        "companyID": "https://dataports-project.eu/dataModel.Cargo#companyID",
+        "consignee": "https://dataports-project.eu/dataModel.Cargo#consignee",
+        "currentServiceLevel": "https://dataports-project.eu/dataModel.Cargo#currentServiceLevel",
+        "declaration": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#declaration",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "description": "https://uri.etsi.org/ngsi-ld/description",
+        "deviceStatus": "https://dataports-project.eu/dataModel.Cargo#deviceStatus",
+        "isoCode": "https://dataports-project.eu/dataModel.Cargo#isoCode",
+        "lastEventDate": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#lastEventDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "lastGpsDate": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#lastGpsDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "lastGpsLatitude": "https://dataports-project.eu/dataModel.Cargo#lastGpsLatitude",
+        "lastGpsLongitude": "https://dataports-project.eu/dataModel.Cargo#lastGpsLongitude",
+        "lastGsmDate": {
+            "@id": "https://dataports-project.eu/dataModel.Cargo#lastGsmDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "loaded": "https://dataports-project.eu/dataModel.Cargo#loaded",
+        "number": "https://dataports-project.eu/dataModel.Cargo#number",
+        "pairingStatus": "https://dataports-project.eu/dataModel.Cargo#pairingStatus",
+        "size": "https://dataports-project.eu/dataModel.Cargo#size",
+        "state": "https://dataports-project.eu/dataModel.Cargo#state",
+        "subcategory": "https://dataports-project.eu/dataModel.Cargo#subcategory",
+        "vesselName ": "https://dataports-project.eu/dataModel.Cargo#vesselName ",
+        "voyageCode": "https://dataports-project.eu/dataModel.Cargo#voyageCode",
+        "year": "https://dataports-project.eu/dataModel.Cargo#year"
+    },
+    "generatedAt": "2022-09-12T09:45:23+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:ngsi-ld:DataSource:MobilityData",
+  "type": "MobilityData",
+  "distinctUsers": { 
+      "metadata": {},
+	  "value": 746,
+	  "type": "number"
+  },
+  "voiceIn": {
+	  "metadata": {}, 
+	  "value": 0,
+	  "type": "number"
+  },
+  "voiceOut": {
+	  "metadata": {},
+	  "value": 3,
+	  "type": "number"
+  },
+  "smsIn": {
+	  "metadata": {},
+	  "value": 0,
+	  "type": "number"
+  },
+  "smsOut": {
+	  "metadata": {},
+	  "value": 0,
+	  "type": "number"
+  },
+  "bytesUp": {
+	  "metadata": {},
+	  "value": 463912241,
+	  "type": "number"
+  },
+  "bytesDown": {
+	  "metadata": {},
+	  "value": 3792966198,
+	  "type": "number"
+  },
+  "cellMunicipality": {
+    "metadata": {},
+    "value": "KORDELIOU - EUOSMOU",
+    "type": "string"
+  },
+  "cellLat": {
+	  "metadata": {},
+	  "value": "40.66564647",
+	  "type": "string"
+  },
+  "cellLon": {
+	  "metadata": {},
+	  "value": "22.9070469",
+	  "type": "string"
+  },
+  "prevCellMunicipality": {
+	  "metadata": {},
+	  "value": "NULL",
+	  "type": "string"
+  },
+  "prevCellLlat": {
+	  "metadata": {},
+	  "value": "NULL",
+	  "type": "string"
+  },
+  "prevCellLon": {
+	  "metadata": {},
+	  "value": "NULL",
+	  "type": "string"
+  },
+  "timePeriod": {
+	  "metadata": {},
+	  "value": "20",
+	  "type": "string"
+  },
+  "eventDate": {
+	  "metadata": {},
+	  "value": "20200204",
+	  "type": "string"
+  },
+  "weekDay": {
+	  "metadata": {},
+	  "value": "3",
+	  "type": "string"
+  },
+  "isWeekend": {
+	  "metadata": {},
+	  "value": "0",
+	  "type": "string"
+  },
+  "isBankHoliday": {
+	  "metadata": {},
+	  "value": "0",
+	  "type": "string"
+  }
+}

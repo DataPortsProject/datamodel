@@ -1,0 +1,84 @@
+    {
+        "id": "urn:ngsi-ld:ThPA:Booking:260357207166566",
+        "type": "Booking",
+        "actualWindowFrom": {
+            "type": "Number",
+            "value": 1050,
+            "metadata": {}
+        },
+        "actualWindowTo": {
+            "type": "Number",
+            "value": 1200,
+            "metadata": {}
+        },
+        "bookingDate": {
+            "type": "Number",
+            "value": 20221215,
+            "metadata": {}
+        },
+        "bookingNumber": {
+            "type": "Number",
+            "value": 260357207166566,
+            "metadata": {}
+        },
+        "bookingStatus": {
+            "type": "Text",
+            "value": "Pending",
+            "metadata": {}
+        },
+        "company": {
+            "type": "Text",
+            "value": "STAVRIDIS VAS. GEORGIOS",
+            "metadata": {}
+        },
+        "containersExport": {
+            "type": "Number",
+            "value": 1,
+            "metadata": {}
+        },
+        "containersImport": {
+            "type": "Number",
+            "value": 0,
+            "metadata": {}
+        },
+        "enterDate": {
+            "type": "Number",
+            "value": 20221215,
+            "metadata": {}
+        },
+        "exportContainer1": {
+            "type": "Text",
+            "value": "SBSU4015226",
+            "metadata": {}
+        },
+        "exportContainer2": {
+            "type": "Text",
+            "value": "",
+            "metadata": {}
+        },
+        "importContainer1": {
+            "type": "Text",
+            "value": "",
+            "metadata": {}
+        },
+        "importContainer2": {
+            "type": "Text",
+            "value": "",
+            "metadata": {}
+        },
+        "originalWindowFrom": {
+            "type": "Number",
+            "value": 1080,
+            "metadata": {}
+        },
+        "originalWindowTo": {
+            "type": "Number",
+            "value": 1140,
+            "metadata": {}
+        },
+        "windowDate": {
+            "type": "Number",
+            "value": 20230127,
+            "metadata": {}
+        }
+    }

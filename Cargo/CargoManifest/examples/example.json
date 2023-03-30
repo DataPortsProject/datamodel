@@ -1,0 +1,12 @@
+{
+  "id": "cargomanifest-1fgvos4ts71v",
+  "type": "cargomanifest",
+  "year": 2021,
+  "code": 2021,
+  "ETA": "2021-07-05T18:00:00",
+  "ETD": "2021-07-05T18:00:00",
+  "number": "string",
+  "state": "string",
+  "consignee": 2021,
+  "declaration": "2021-07-05T18:00:00"
+}

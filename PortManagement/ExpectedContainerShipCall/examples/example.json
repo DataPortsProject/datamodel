@@ -1,0 +1,27 @@
+{
+  "id": "expectedcontainershipcall-l6b8d62ggjhb",
+  "type": "expectedcontainershipcall",
+  "vessel": {
+    "shipName": "string",
+    "IMO": 2021,
+    "shipTypeCategory": [
+      "CONTAINER",
+      "GENERAL CARGO NON SPECIALIZED",
+      "LIQUID BULK",
+      "DRY BULK",
+      "CRUISE"
+    ],
+    "shipTypeClass": [
+      "MULTI-DECKER",
+      "CHEMICAL TANKER",
+      "FULL CONTAINER",
+      "OIL TANKER",
+      "BULK CARRIER",
+      "LG TANKER"
+    ]
+  },
+  "ETA": "2021-07-05T18:00:00",
+  "moves": 2021,
+  "voCode": "string",
+  "sl": "string"
+}

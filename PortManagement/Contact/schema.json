@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/Contact/schema.json",
+  "title": "DataPorts - Contact schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "account": {
+          "type": "string",
+          "description": "Name of the customer account"
+        },
+        "email": {
+          "type": "string",
+          "description": "e-mail of the contact"
+        },
+        "firstname": {
+          "type": "string",
+          "description": "First name of the contact"
+        },
+        "lastname": {
+          "type": "string",
+          "description": "Last name of the contact"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the contact"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the contact"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

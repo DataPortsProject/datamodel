@@ -1,0 +1,123 @@
+    {
+        "id": "urn:ngsi-ld:TrackableEvent:63:V:1668008189751",
+        "type": "TrackableEvent",
+        "attributes": [
+            {
+                "name": "portAuthorityCode",
+                "value": 63
+            },
+            {
+                "name": "portAuthorityName",
+                "value": "VPF"
+            },
+            {
+                "name": "portCode",
+                "value": "V"
+            },
+            {
+                "name": "portName",
+                "value": "Valencia Port Fundation"
+            },
+            {
+                "name": "geometry",
+                "value": "31"
+            },
+            {
+                "name": "geometryDescription",
+                "value": "ZONA SERVICIO"
+            },
+            {
+                "name": "eventType",
+                "value": 22
+            },
+            {
+                "name": "eventTypeDescription",
+                "value": "AIS_FREQUENCY_TOO_LOW"
+            },
+            {
+                "name": "vesselType",
+                "value": 0
+            },
+            {
+                "name": "vesselTypeDescription",
+                "value": "NOT_AVAILABLE"
+            },
+            {
+                "name": "vesselName",
+                "value": ""
+            },
+            {
+                "name": "IMO",
+                "value": 0
+            },
+            {
+                "name": "MMSI",
+                "value": 224167590
+            },
+            {
+                "name": "toStern",
+                "value": 0
+            },
+            {
+                "name": "toPort",
+                "value": 0
+            },
+            {
+                "name": "toStarboard",
+                "value": 0
+            },
+            {
+                "name": "callSign",
+                "value": ""
+            },
+            {
+                "name": "draught",
+                "value": 0
+            },
+            {
+                "name": "accuracy",
+                "value": false
+            },
+            {
+                "name": "raim",
+                "value": true
+            },
+            {
+                "name": "radio",
+                "value": 59916
+            },
+            {
+                "name": "dte",
+                "value": false
+            },
+            {
+                "name": "speed",
+                "value": 0
+            },
+            {
+                "name": "destination",
+                "value": ""
+            },
+            {
+                "name": "course",
+                "value": 172
+            },
+            {
+                "name": "heading",
+                "value": 511
+            },
+            {
+                "name": "turn",
+                "value": 128
+            }
+        ],
+        "location": {
+            "position": {
+                "type": "Point",
+                "coordinates": [
+                    39.456547,
+                    -0.327505
+                ]
+            }
+        }
+    }

@@ -1,0 +1,57 @@
+{
+  "id": "urn:ngsi-ld:Posidonia:10:T:1660300202716",
+  "type": "PosidoniaEvent",
+  "PortAuthority": {
+    "value": { "portAuthorityCode": 10, "portAuthorityName": "ThPA" },
+    "type": "Property"
+  },
+  "Port": {
+    "value": { "portCode": "T", "portName": "Thesaloniki Port Authority" },
+    "type": "Property"
+  },
+  "PortZone": {
+    "value": { "geometry": "W_E", "geometryDescription": "WEST ENTRANCE" },
+    "type": "Property"
+  },
+  "Posidonia": {
+    "value": {
+      "update": 1660300202716,
+      "updateAsDate": "12/08/2022 12:30:02",
+      "eventType": { "value": 2, "description": "WAYPOINT" },
+      "eventVessels": [
+        {
+          "vesselName": "",
+          "vesselType": { "value": 0, "description": "NOT_AVAILABLE" },
+          "IMO": 0,
+          "MMSI": 210312000,
+          "toStern": 0,
+          "toPort": 0,
+          "toStarboard": 0,
+          "callSign": "",
+          "draught": 0.0,
+          "accuracy": false,
+          "raim": false,
+          "radio": 59916,
+          "dte": false,
+          "speed": 4.2,
+          "longitude": 22.904121,
+          "latitude": 40.629646,
+          "destination": "",
+          "course": 354.0,
+          "heading": 357,
+          "turn": 0.0,
+          "month": 0,
+          "day": 0,
+          "hour": 0,
+          "minute": 0,
+          "second": 1
+        }
+      ]
+    },
+    "type": "Property"
+  },
+  "AisAntena": {
+    "value": { "name": "aishub", "version": 0 },
+    "type": "Property"
+  }
+}

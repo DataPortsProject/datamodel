@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Geofencing/AssetGeofenceZone/schema.json",
+  "title": "DataPorts - AssetGeofenceZone schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Traxens id of the event"
+        },
+        "name": {
+          "type": "string",
+          "description": "Geofencing event name"
+        },
+        "asset": {
+          "type": "string",
+          "description": "Equipment number"
+        },
+        "createdDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Event creation date and time"
+        },
+        "lastmodifiedDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last event modification date and time"
+        },
+        "entryDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time of entry into zone"
+        },
+        "leavingDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date and time of exit out of zone"
+        },
+        "geofenceZone": {
+          "type": "string",
+          "description": "Geofencing zone name"
+        },
+        "geofenceZoneId": {
+          "type": "number",
+          "description": "Geofencing zone Traxens id"
+        },
+        "ingeofenceZone": {
+          "type": "boolean",
+          "description": "Presence of equipment in geofence zone at last communication"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

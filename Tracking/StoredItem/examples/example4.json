@@ -1,0 +1,220 @@
+{
+    "id": "urn:ngsi-ld:VPF:StoredItem:acceptance",
+    "type": "StoredItem",
+	"_id": "6351e76a91c879003b60e237",
+    "version": "0.0",
+    "reportedByID": "A61361796@46023@office",
+    "reportedByCode": "T073",
+    "reportedByRole": "agent",
+    "assetType": "storedItem",
+    "userId": "633b2acd2f5727db5602eacf",
+    "ID": "T073-ACP-2021-380709-1@A81395220@46190@storedItem",
+    "status": "accepted",
+    "lastTrackableEvent": {
+      "ID": "2022-10-21T00:27:22.298Z@T073-ACP-2021-380709-1@G97360325@46024@event",
+      "name": "storedItem",
+      "eventType": "accepted",
+      "location": {
+        "location": "G97360325@46024@office",
+        "locationName": "FUNDACIÓN VALENCIAPORT",
+        "address": {
+          "street": "Avda. Muelle del Turia",
+          "city": "Valencia",
+          "postalCode": "46024",
+          "province": "Valencia",
+          "country": {
+            "name": "España"
+          }
+        }
+      },
+      "performedTime": "2022-10-21T00:27:22.298Z"
+    },
+    "storedItemID": "T073-ACP-2021-380709-1",
+    "orderDate": "2021-07-09T11:26:42",
+    "depositor": {
+      "ID": "CCBC@office",
+      "role": "depositor",
+      "organization": {
+        "code": "CCBC",
+        "name": "COSCO Shipping Lines"
+      }
+    },
+    "agent": {
+      "ID": "A61361796@46023@office",
+      "role": "agent",
+      "organization": {
+        "code": "A61361796",
+        "name": "Cosco Shipping Lines Spain S.A."
+      },
+      "office": {
+        "code": "46023",
+        "name": "Valencia"
+      },
+      "address": {
+        "street": "Menorca, 19, planta 11 - Edificio AQUA",
+        "city": "Valencia",
+        "postalCode": "46023",
+        "province": "Valencia/València",
+        "country": {
+          "code": "ES",
+          "name": "ESPAÑA"
+        }
+      },
+      "codes": [
+        "T073"
+      ]
+    },
+    "depositary": {
+      "createdAt": "2021-10-04T23:06:55.276Z",
+      "updatedAt": "2021-10-27T15:06:11.742Z",
+      "ID": "A81395220@46190@office",
+      "role": "depositary",
+      "organization": {
+        "code": "A81395220",
+        "name": "DOCKS LOGISTICS SPAIN,S.A."
+      },
+      "office": {
+        "code": "46190",
+        "name": "Ribarroja del Turia "
+      },
+      "address": {
+        "street": "Parque Logístico de Valencia, manzana 16-2 Edif. Docks Logistic Spain",
+        "city": "Ribarroja del Turia ",
+        "postalCode": "46190",
+        "province": "Valencia"
+      },
+      "codes": [
+        "DKCV"
+      ]
+    },
+    "shipment": {
+      "shipmentID": "6884410410W",
+      "bolNumber": "6884410410W",
+      "requestorReference": "2021149037",
+      "transportMode": "sea",
+      "transportUnitType": "container",
+      "carrier": {
+        "ID": "CCBC@office",
+        "organization": {
+          "code": "CCBC",
+          "name": "COSCO Shipping Lines"
+        }
+      }
+    },
+    "gateInOperations": [
+      {
+        "reportedByCode": "T073",
+        "type": "gateIn",
+        "value": "T073-ACP-2021-380709-1",
+        "status": "accepted",
+        "requestedDate": "2021-07-13T08:00:00",
+        "containerStatus": "empty",
+        "shipments": [
+          {
+            "ID": "2021COV3807090101@B97463269@shipment",
+            "requestorReference": "2021COV3807090101",
+            "transportMode": "road",
+            "transportUnitType": "container",
+            "requestor": {
+              "ID": "A61361796@46023@office",
+              "organization": {
+                "code": "A61361796",
+                "name": "Cosco Shipping Lines Spain S.A."
+              },
+              "office": {
+                "code": "46023",
+                "name": "Valencia"
+              }
+            },
+            "carrier": {
+              "ID": "B97463269@office",
+              "organization": {
+                "code": "B97463269",
+                "name": "LOGILU S.L."
+              },
+              "office": {
+                "name": "Valencia"
+              }
+            },
+            "references": [
+              {
+                "type": "system",
+                "value": "T073202200000002"
+              }
+            ]
+          }
+        ],
+        "shipmentsCount": 1,
+        "transportUnits": [
+          {
+            "ID": "TLLU4058460@6884410410W@CCBC@transportUnit",
+            "transportUnitID": "TLLU4058460",
+            "containerStatus": "empty",
+            "provider": {
+              "ID": "A61361796@46023@office",
+              "role": "provider",
+              "organization": {
+                "code": "A61361796",
+                "name": "Cosco Shipping Lines Spain S.A."
+              },
+              "office": {
+                "code": "46023",
+                "name": "Valencia"
+              },
+              "address": {
+                "street": "Menorca, 19, planta 11 - Edificio AQUA",
+                "city": "Valencia",
+                "postalCode": "46023",
+                "province": "Valencia/València",
+                "country": {
+                  "code": "ES",
+                  "name": "ESPAÑA"
+                }
+              },
+              "codes": [
+                "T073"
+              ]
+            },
+            "containerType": {
+              "code": "4510"
+            },
+            "shipment": {
+              "ID": "6884410410W@CCBC@shipment",
+              "shipmentID": "6884410410W",
+              "bolNumber": "6884410410W",
+              "requestorReference": "2021149037",
+              "carrier": {
+                "ID": "CCBC@office",
+                "role": "carrier",
+                "organization": {
+                  "code": "CCBC",
+                  "name": "COSCO Shipping Lines"
+                }
+              }
+            },
+            "seals": [
+              {
+                "owner": "carrier",
+                "number": "15149996"
+              }
+            ]
+          }
+        ],
+        "unitsCount": 1,
+        "references": [
+          {
+            "type": "system",
+            "value": "T073202200000001"
+          },
+          {
+            "type": "barCode",
+            "value": "LDGNTGCLRSHE2GEMBT"
+          },
+          {
+            "type": "pin",
+            "value": "KNBY"
+          }
+        ]
+      }
+    ]
+  }

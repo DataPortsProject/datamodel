@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Mobility/MobilityData/schema.json",
+  "title": "DataPorts - ThessalonikiRegionalMobilityData schema",
+  "description": "This dataset shows people (passenger) mobility information in Thessaloniki Region. It contains, in an aggreegated level the number of distinct users' movement form one municipality to another. This dataset doesn't contail any form of personal data. Its objective is to optimize the passengers' facilitation in the port.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "distinctUsers": {
+          "type": "number",
+          "description": "Number of distinct users"
+        },
+        "voiceIn": {
+          "type": "number",
+          "description": "Number of incoming voice calls"
+        },
+        "voiceOut": {
+          "type": "number",
+          "description": "Number of outgoing voice calls"
+        },
+        "smsIn": {
+          "type": "number",
+          "description": "Number of incoming sms"
+        },
+        "smsOut": {
+          "type": "number",
+          "description": "Number of outgoing sms"
+        },
+        "bytesUp": {
+          "type": "number",
+          "description": "Total bytes uploaded"
+        },
+        "bytesDown": {
+          "type": "number",
+          "description": "Total bytes downloaded"
+        },
+        "cellMunicipality": {
+          "type": "string",
+          "description": "Municipality which group of cells, that users for this time period used, are located"
+        },
+        "cellLat": {
+          "type": "string",
+          "description": "Latitude which group of cells, that users for this time period used, are located"
+        },
+        "cellLon": {
+          "type": "string",
+          "description": "Longtitude which group of cells, that users for this time period used, are located"
+        },
+        "prevCellMunicipality": {
+          "type": "string",
+          "description": "Municipality which group of cells, that users used for the previous time period, are located"
+        },
+        "prevCellLlat": {
+          "type": "string",
+          "description": "Latitude which group of cells, that users used for the previous time period, are located"
+        },
+        "prevCellLon": {
+          "type": "string",
+          "description": "Longtitude which group of cells, that users used for the previous time period, are located"
+        },
+        "timePeriod": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Time period in Hours"
+        },
+        "eventDate": {
+          "type": "string",
+          "description": "Date of events"
+        },
+        "weekDay": {
+          "type": "string",
+          "description": "Day of the week"
+        },
+        "isWeekend": {
+          "type": "string",
+          "description": "Flag if this date is weekend day"
+        },
+        "isBankHoliday": {
+          "type": "string",
+          "description": "Flag if this date is a bank holiday"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "distinctUsers",
+    "cellMunicipality",
+    "cellLat",
+    "cellLon",
+    "prevCellMunicipality",
+    "prevCellLlat",
+    "prevCellLon",
+    "timePeriod",
+    "eventDate"
+  ]
+}

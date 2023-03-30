@@ -1,0 +1,256 @@
+    {
+        "id": "urn:ngsi-ld:VPF:Shipment:2022060801",
+        "type": "Shipment",
+        "ID": {
+            "type": "Text",
+            "value": "2022060801@W44444444@46024@shipment",
+            "metadata": {}
+        },
+        "_id": {
+            "type": "Text",
+            "value": "62b43cb7b75a24cfbc620a22",
+            "metadata": {}
+        },
+        "assetType": {
+            "type": "Text",
+            "value": "shipment",
+            "metadata": {}
+        },
+        "carrier": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "W44444444@46024@office",
+                "organization": {
+                    "code": "W44444444",
+                    "name": "TRANSPORTISTA"
+                },
+                "office": {
+                    "code": "46024",
+                    "name": "VALÈNCIA"
+                },
+                "address": {
+                    "city": "VALÈNCIA",
+                    "postalCode": "46024",
+                    "province": "VALENCIA/VALÈNCIA"
+                }
+            },
+            "metadata": {}
+        },
+        "consignee": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "X33333333@28922@office",
+                "organization": {
+                    "code": "X33333333",
+                    "name": "DESTINATARIO"
+                },
+                "office": {
+                    "code": "28922",
+                    "name": "ALCORCÓN"
+                },
+                "address": {
+                    "city": "ALCORCÓN",
+                    "postalCode": "28922",
+                    "province": "MADRID"
+                }
+            },
+            "metadata": {}
+        },
+        "destination": {
+            "type": "StructuredValue",
+            "value": {
+                "type": "destination",
+                "location": "X33333333@28922@office",
+                "locationName": "Alcorcon",
+                "rta": "2022-06-11T20:00:00+01:00",
+                "eta": "2022-06-01T19:00:00+01:00",
+                "ata": "2022-06-01T19:19:00+01:00",
+                "address": {
+                    "city": "Madrid",
+                    "postalCode": "28922"
+                },
+                "position": {
+                    "type": "Point",
+                    "coordinates": [
+                        40.35156977,
+                        -3.82849494
+                    ]
+                }
+            },
+            "metadata": {}
+        },
+        "dispatchParty": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "Y22222222@46024@office",
+                "organization": {
+                    "code": "Y22222222",
+                    "name": "EXPEDIDOR"
+                },
+                "office": {
+                    "code": "46024",
+                    "name": "VALÈNCIA"
+                },
+                "address": {
+                    "city": "VALÈNCIA",
+                    "postalCode": "46024",
+                    "province": "VALENCIA/VALÈNCIA"
+                }
+            },
+            "metadata": {}
+        },
+        "goodsItems": {
+            "type": "StructuredValue",
+            "value": [
+                {
+                    "goodsDescription": {
+                        "name": "AZULEJOS 1"
+                    }
+                }
+            ],
+            "metadata": {}
+        },
+        "itemCount": {
+            "type": "Number",
+            "value": 2,
+            "metadata": {}
+        },
+        "lastTrackableEvent": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "2022-06-12T18:15:15.000Z@T11111111@46024@event",
+                "name": "storedItem",
+                "eventType": "gateIn",
+                "location": {
+                    "address": {
+                        "street": "Terminal",
+                        "city": "Valencia",
+                        "postalCode": "46024"
+                    },
+                    "position": {
+                        "type": "Point",
+                        "coordinates": [
+                            39.47534441,
+                            "-0.375657170"
+                        ]
+                    },
+                    "location": "ESVLC",
+                    "locationName": "VALENCIA"
+                },
+                "performedTime": "2022-06-12T19:15:15+01:00"
+            },
+            "metadata": {}
+        },
+        "orderDate": {
+            "type": "Text",
+            "value": "2022-06-09T15:30:00+01:00",
+            "metadata": {}
+        },
+        "origin": {
+            "type": "StructuredValue",
+            "value": {
+                "type": "origin",
+                "location": "Y22222222@46024@office",
+                "locationName": "Valencia",
+                "rtd": "2022-06-11T00:00:00+01:00",
+                "etd": "2022-06-01T11:08:00+01:00",
+                "atd": "2022-06-01T11:08:15+01:00",
+                "address": {
+                    "city": "Valencia",
+                    "postalCode": "46024"
+                },
+                "position": {
+                    "type": "Point",
+                    "coordinates": [
+                        39.47534441,
+                        "-0.375657170"
+                    ]
+                }
+            },
+            "metadata": {}
+        },
+        "reportedByID": {
+            "type": "Text",
+            "value": "W44444444@46024@office",
+            "metadata": {}
+        },
+        "reportedByRole": {
+            "type": "Text",
+            "value": "carrier",
+            "metadata": {}
+        },
+        "requestor": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "Z11111111@46024@office",
+                "organization": {
+                    "code": "Z11111111",
+                    "name": "CARGADOR"
+                },
+                "office": {
+                    "code": "46024",
+                    "name": "VALÈNCIA"
+                },
+                "address": {
+                    "city": "VALÈNCIA",
+                    "postalCode": "46024",
+                    "province": "VALENCIA/VALÈNCIA"
+                }
+            },
+            "metadata": {}
+        },
+        "requestorReference": {
+            "type": "Text",
+            "value": "R202206081",
+            "metadata": {}
+        },
+        "shipmentID": {
+            "type": "Text",
+            "value": "2022060801",
+            "metadata": {}
+        },
+        "status": {
+            "type": "Text",
+            "value": "finished",
+            "metadata": {}
+        },
+        "totalDeclaredWeight": {
+            "type": "Number",
+            "value": 15000,
+            "metadata": {}
+        },
+        "transport": {
+            "type": "StructuredValue",
+            "value": {
+                "ID": "0001@W44444444@46024@transport",
+                "transportID": "0001",
+                "identification": {
+                    "code": "ABC1234"
+                },
+                "carrier": {
+                    "ID": "W44444444@46024@office"
+                }
+            },
+            "metadata": {}
+        },
+        "transportMode": {
+            "type": "Text",
+            "value": "road",
+            "metadata": {}
+        },
+        "transportUnitType": {
+            "type": "Text",
+            "value": "pallet",
+            "metadata": {}
+        },
+        "userId": {
+            "type": "Text",
+            "value": "6253219dc00922078aea3bd0",
+            "metadata": {}
+        },
+        "version": {
+            "type": "Text",
+            "value": "0.0",
+            "metadata": {}
+        }
+    }

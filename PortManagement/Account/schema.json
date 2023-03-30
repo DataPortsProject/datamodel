@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/Account/schema.json",
+  "title": "DataPorts - Account schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "operationNumber": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "code": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "userId": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "companyVat": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "companyName": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "accountType": {
+          "type": "string",
+          "enum": [
+            "credit",
+            "debit"
+          ],
+          "description": "MISSING"
+        },
+        "amount": {
+          "type": "number",
+          "description": "MISSING"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time",
+          "description": "MISSING"
+        },
+        "vgmCode": {
+          "type": "number",
+          "description": "MISSING"
+        },
+        "vgmId": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "vgmReference": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "vgmContainerNumber": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "fee": {
+          "type": "number",
+          "description": "MISSING"
+        },
+        "entityVat": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "entityName": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "automatic": {
+          "type": "boolean",
+          "description": "MISSING"
+        },
+        "currency": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "order": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "merchantName": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "merchantCode": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "transactionType": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "terminal": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "merchantURL": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "successURL": {
+          "type": "string",
+          "description": "MISSING"
+        },
+        "errorURL": {
+          "type": "string",
+          "description": "MISSING"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

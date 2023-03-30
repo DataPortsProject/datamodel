@@ -1,0 +1,13 @@
+{
+  "id": "string",
+  "type": "assetgeofencezone",
+  "name": "string",
+  "asset": "string",
+  "createdDate": "2021-07-05T18:00:00",
+  "lastmodifiedDate": "2021-07-05T18:00:00",
+  "entryDate": "2021-07-05T18:00:00",
+  "leavingDate": "2021-07-05T18:00:00",
+  "geofenceZone": "string",
+  "geofenceZoneId": 2021,
+  "ingeofenceZone": true
+}

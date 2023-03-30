@@ -1,0 +1,24 @@
+    {
+        "id": "urn:ngsi-ld:OTE:TrafficDetection",
+        "type": "TrafficDetection",
+        "numberOfRecords": {
+            "type": "Number",
+            "value": 44,
+            "metadata": {}
+        },
+        "timestamp": {
+            "type": "Text",
+            "value": "2021-07-01T00:00:05.163",
+            "metadata": {}
+        },
+        "trafficDetectionDevice": {
+            "type": "StructuredValue",
+            "value": {
+                "deviceID": 11,
+                "deviceName": "iTravel-1-Lagada",
+                "latitude": 40.647450413,
+                "longtitude": 22.935221269
+            },
+            "metadata": {}
+        }
+    }

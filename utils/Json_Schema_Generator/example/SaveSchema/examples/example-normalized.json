@@ -1,0 +1,37 @@
+{
+  "id": "vessel-m1wrcar9s0ik",
+  "type": "vessel",
+  "shipName": {
+    "type": "Text",
+    "value": "string"
+  },
+  "arrivalDate": {
+    "type": "DateTime",
+    "value": "2021-07-05T18:00:00"
+  },
+  "departureDate": {
+    "type": "DateTime",
+    "value": "2021-07-05T18:00:00"
+  },
+  "containersId": {
+    "type": "Number",
+    "value": 2021
+  },
+  "size": {
+    "type": "StructuredValue",
+    "value": {
+      "length": {
+        "type": "Number",
+        "value": 386
+      },
+      "draft": {
+        "type": "Number",
+        "value": 316
+      }
+    }
+  },
+  "country": {
+    "type": "Relationship",
+    "value": "urn:ngsi:DataModel:001"
+  }
+}

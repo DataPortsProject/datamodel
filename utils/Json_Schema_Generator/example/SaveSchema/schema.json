@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Transport/Vessel/schema.json",
+  "title": "DataPorts - Vessel schema",
+  "description": "Cargo type vessel",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "shipName": {
+          "type": "string",
+          "description": "Name of the vessel"
+        },
+        "arrivalDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Actual date/time of berthing"
+        },
+        "departureDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Actual date/time of un-berthing"
+        },
+        "containersId": {
+          "type": "number",
+          "enum": [
+            3,
+            44,
+            24,
+            88,
+            56
+          ],
+          "description": "Enumeration that contains the Ids of the containers"
+        },
+        "size": {
+          "type": "object",
+          "properties": {
+            "length": {
+              "type": "number",
+              "minimum": 20,
+              "maximum": 400,
+              "description": "Length of the vessel"
+            },
+            "draft": {
+              "type": "number",
+              "minimum": 20,
+              "maximum": 400,
+              "description": "Draft of the vessel"
+            }
+          },
+          "description": "Size properties of the vessel"
+        },
+        "country": {
+          "type": "relationship",
+          "description": "Country where vessel is registered"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "arrivalDate",
+    "departureDate",
+    "size",
+    "draft"
+  ]
+}

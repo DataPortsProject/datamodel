@@ -1,0 +1,36 @@
+{
+    "@context": {
+        "bytesDown": "https://dataports-project.eu/dataModel.Mobility#bytesDown",
+        "bytesUp": "https://dataports-project.eu/dataModel.Mobility#bytesUp",
+        "cellLat": "https://dataports-project.eu/dataModel.Mobility#cellLat",
+        "cellLon": "https://dataports-project.eu/dataModel.Mobility#cellLon",
+        "cellMunicipality": "https://dataports-project.eu/dataModel.Mobility#cellMunicipality",
+        "dateFrom": {
+            "@id": "https://dataports-project.eu/dataModel.Mobility#dateFrom",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "distinctUsers": "https://dataports-project.eu/dataModel.Mobility#distinctUsers",
+        "eventDate": "https://dataports-project.eu/dataModel.Mobility#eventDate",
+        "isBankHoliday": "https://dataports-project.eu/dataModel.Mobility#isBankHoliday",
+        "isWeekend": "https://dataports-project.eu/dataModel.Mobility#isWeekend",
+        "max": "https://dataports-project.eu/dataModel.Mobility#max",
+        "min": "https://dataports-project.eu/dataModel.Mobility#min",
+        "prevCellLlat": "https://dataports-project.eu/dataModel.Mobility#prevCellLlat",
+        "prevCellLon": "https://dataports-project.eu/dataModel.Mobility#prevCellLon",
+        "prevCellMunicipality": "https://dataports-project.eu/dataModel.Mobility#prevCellMunicipality",
+        "smsIn": "https://dataports-project.eu/dataModel.Mobility#smsIn",
+        "smsOut": "https://dataports-project.eu/dataModel.Mobility#smsOut",
+        "timeFrom": {
+            "@id": "https://dataports-project.eu/dataModel.Mobility#timeFrom",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "timePeriod": {
+            "@id": "https://dataports-project.eu/dataModel.Mobility#timePeriod",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "voiceIn": "https://dataports-project.eu/dataModel.Mobility#voiceIn",
+        "voiceOut": "https://dataports-project.eu/dataModel.Mobility#voiceOut",
+        "weekDay": "https://dataports-project.eu/dataModel.Mobility#weekDay"
+    },
+    "generatedAt": "2022-09-12T09:59:03+00:00"
+}

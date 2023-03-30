@@ -1,0 +1,474 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Posidonia/PosidoniaEvent/schema.json",
+  "title": "DataPorts - PosidoniaEvent schema",
+  "description": "Data Model that will use the events from  Posidonia Port Solution Suite.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "PortAuthority": {
+          "type": "object",
+          "properties": {
+            "portAuthorityCode": {
+              "type": "number",
+              "description": "Internal ID of the Port Authority"
+            },
+            "portAuthorityName": {
+              "type": "string",
+              "description": "Name of the Port Authority. Nuevo no forma parte de PortAuthority"
+            }
+          }
+        },
+        "Port": {
+          "type": "object",
+          "properties": {
+            "portCode": {
+              "type": "string",
+              "description": "Code of the port"
+            },
+            "portName": {
+              "type": "string",
+              "description": "Name of the port. Nuevo no forma forma de Port"
+            }
+          }
+        },
+        "PortZone": {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "type": "string",
+              "description": "Port Zone internal ID"
+            },
+            "geometryDescription": {
+              "type": "string",
+              "description": "Description of the Port Zone"
+            }
+          }
+        },
+        "Posidonia": {
+          "type": "object",
+          "properties": {
+            "update": {
+              "type": "number",
+              "description": "Time of the event in millis. Numeric (Long)"
+            },
+            "updateAsDate": {
+              "type": "string",
+              "description": "Property update as date in string format (String)",
+              "format": "date-time"
+            },
+            "eventType": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "description": "Internal ID of the type of the event. Numeric (Long)",
+                  "enum": [
+                    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
+                    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28
+                  ]
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Description of this event",
+                  "enum": [
+                    "AIS_IN",
+                    "WAYPOINT",
+                    "STOP_OVER_IN",
+                    "ANCHOR_IN",
+                    "ANCHOR_OUT",
+                    "PILOT_START",
+                    "TUG_START",
+                    "DOCK_STOP",
+                    "DOCK_STOP_START",
+                    "DOCK_START_OUT",
+                    "PILOT_AWAY",
+                    "TUG_AWAY",
+                    "STOP_OVER_OUT",
+                    "AIS_OUT",
+                    "OIL_START",
+                    "OIL_STOP",
+                    "ANCHOR_IN_START",
+                    "FORBIDDEN_ANCHOR_IN",
+                    "DOCK_RESTOP",
+                    "AIS_SWITCHED_OFF",
+                    "AIS_SWITCHED_ON",
+                    "AIS_FREQUENCY_TOO_LOW",
+                    "ANCHOR_REIN",
+                    "DOCK_APPROACH",
+                    "CONTROL_ZONE_IN",
+                    "CONTROL_ZONE_OUT",
+                    "SPEED_LIMIT_EXCEEDED",
+                    "ACNHOR_OUT_ASSUMED"
+                  ]
+                }
+              }
+            },
+            "newDate": {
+              "type": "number",
+              "description": "Timestamp in millis. Son de Management."
+            },
+            "oldDate": {
+              "type": "number",
+              "description": "Timestamp in millis. Son de Management."
+            },
+            "eventVessels": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "vesselName": {
+                      "type": "string",
+                      "description": "Name of the vessel"
+                    },
+                    "vesselCode": {
+                      "type": "number",
+                      "description": "Internal ID of the Vessel. Numeric (Long)"
+                    },
+                    "vesselType": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "description": "Tye of the Vessel. Numeric (Enum)",
+                          "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 52, 74]
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Description of Vessel's type",
+                          "enum": [
+                            "NOT_AVAILABLE",
+                            "TUG",
+                            "CARGO,_HAZARDOUS_CATEGORY_D"
+                          ]
+                        }
+                      }
+                    },
+                    "IMO": {
+                      "type": "number",
+                      "description": "IMO Ship ID number. Numeric (Long)"
+                    },
+                    "MMSI": {
+                      "type": "number",
+                      "description": "Maritime Mobile Service Identity of the Vessel. Numeric (Long)"
+                    },
+                    "toStern": {
+                      "type": "number",
+                      "description": "Dimension to stern. Numeric (Long)"
+                    },
+                    "toPort": {
+                      "type": "number",
+                      "description": "Dimension to port. Numeric (Long)"
+                    },
+                    "toStarboard": {
+                      "type": "number",
+                      "description": "Dimension to starboard. Numeric (Long)"
+                    },
+                    "callSign": {
+                      "type": "string",
+                      "description": "Call sign (String)"
+                    },
+                    "draught": {
+                      "type": "number",
+                      "description": "Ship draught. Numeric (Float)"
+                    },
+                    "accuracy": {
+                      "type": "boolean",
+                      "description": "Position accuracy"
+                    },
+                    "raim": {
+                      "type": "boolean",
+                      "description": "RAIM (Receiver Autonomous Integrity Monitoring) flag"
+                    },
+                    "radio": {
+                      "type": "number",
+                      "description": "Radio status (Long)"
+                    },
+                    "dte": {
+                      "type": "boolean",
+                      "description": "Data Terminal Equipment (Available / Not Available)."
+                    },
+                    "status": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "description": "Status of the Vessel (Enum)",
+                          "enum": [
+                            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+                          ]
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Meaning of the Vessel's status"
+                        }
+                      }
+                    },
+                    "speed": {
+                      "type": "number",
+                      "description": "Speed over the ground (knots). Float"
+                    },
+                    "longitude": {
+                      "type": "number",
+                      "description": "Longitude (Float)"
+                    },
+                    "latitude": {
+                      "type": "number",
+                      "description": "Latitude (Float)"
+                    },
+                    "maneuver": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "number",
+                          "description": "Maneuver indicator (Enum)",
+                          "enum": [0, 1, 2, 3]
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Meaning of Maneuver indicator"
+                        }
+                      }
+                    },
+                    "destination": {
+                      "type": "string",
+                      "description": "Ship destination"
+                    },
+                    "course": {
+                      "type": "number",
+                      "description": "Course over the ground (COG). Float"
+                    },
+                    "heading": {
+                      "type": "number",
+                      "description": "True heading (HDG). Long"
+                    },
+                    "turn": {
+                      "type": "number",
+                      "description": "Rate of turn (ROT). Float"
+                    },
+                    "month": {
+                      "type": "number",
+                      "description": "ETA month. Numeric (Long)"
+                    },
+                    "day": {
+                      "type": "number",
+                      "description": "ETA day. Numeric (Long)"
+                    },
+                    "hour": {
+                      "type": "number",
+                      "description": "ETA hour. Numeric (Long)"
+                    },
+                    "minute": {
+                      "type": "number",
+                      "description": "ETA minute. Numeric (Long)"
+                    },
+                    "second": {
+                      "type": "number",
+                      "description": "Timestamp. Numeric (Long)"
+                    }
+                  }
+                }
+              ]
+            },
+            "stakeholders": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string",
+                      "description": "Internal code of the stakeholder"
+                    },
+                    "legalID": {
+                      "type": "string",
+                      "description": "ID to identify the stakeholder (DNI or CIF)"
+                    },
+                    "fullName": {
+                      "type": "string",
+                      "description": "Stakeholder's full name"
+                    }
+                  }
+                }
+              ]
+            },
+            "visit": {
+              "type": "object",
+              "properties": {
+                "visitCode": {
+                  "type": "number",
+                  "description": "ID of the visit. Numeric (Long)"
+                },
+                "state": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string",
+                      "description": "State code"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Description of state code"
+                    }
+                  }
+                },
+                "ETA": {
+                  "type": "number",
+                  "description": "Timestamp in millis"
+                },
+                "ETD": {
+                  "type": "number",
+                  "description": "Timestamp in millis"
+                },
+                "visitNumber": {
+                  "type": "string",
+                  "description": "Visit number (String)"
+                },
+                "year": {
+                  "type": "number",
+                  "description": "Year of the visit. Numeric (Long)"
+                },
+                "cargoManifest": {
+                  "type": "object",
+                  "properties": {
+                    "year": {
+                      "type": "number",
+                      "description": "Year of the manifest"
+                    },
+                    "code": {
+                      "type": "number",
+                      "description": "ID of the manifest. Numeric (Long)"
+                    },
+                    "declarationNumber": {
+                      "type": "string",
+                      "description": "Declaration number (String)"
+                    },
+                    "declarationDate": {
+                      "type": "number",
+                      "description": "Timestamp in millis"
+                    },
+                    "state": {
+                      "type": "string",
+                      "description": "State code (String)"
+                    }
+                  }
+                },
+                "consignee": {
+                  "type": "object",
+                  "properties": {
+                    "consigneeID": {
+                      "type": "number",
+                      "description": "ID of the Consignee"
+                    },
+                    "consigneeName": {
+                      "type": "string",
+                      "description": "Name of the Consignee"
+                    },
+                    "consigneeCIF": {
+                      "type": "string",
+                      "description": "ID Number (String)"
+                    },
+                    "request": {
+                      "type": "object",
+                      "properties": {
+                        "requestID": {
+                          "type": "number",
+                          "description": "ID of the request. Numeric (Long)"
+                        },
+                        "oldState": {
+                          "type": "object",
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "description": "Code for the old state"
+                            },
+                            "description": {
+                              "type": "string",
+                              "description": "Old State's description"
+                            }
+                          }
+                        },
+                        "newState": {
+                          "type": "object",
+                          "properties": {
+                            "code": {
+                              "type": "string",
+                              "description": "Code for the new state"
+                            },
+                            "description": {
+                              "type": "string",
+                              "description": "New State's description"
+                            }
+                          }
+                        },
+                        "date": {
+                          "type": "number",
+                          "description": "When it changes to the new state (Date)"
+                        },
+                        "type": {
+                          "type": "string",
+                          "description": "Supply type ID (String)"
+                        },
+                        "units": {
+                          "type": "number",
+                          "description": "Number of units requested. Numeric (Double)"
+                        },
+                        "enterprise": {
+                          "type": "object",
+                          "properties": {
+                            "enterpriseID": {
+                              "type": "number",
+                              "description": "Internal ID of the Enterprise. Numeric (Long)"
+                            },
+                            "enterpriseCIF": {
+                              "type": "number",
+                              "description": "ID Number (String)"
+                            },
+                            "enterpriseName": {
+                              "type": "string",
+                              "description": "Name of the enterprise"
+                            },
+                            "enterprisePhoneNumber": {
+                              "type": "string",
+                              "description": "String"
+                            },
+                            "enterpriseEmail": {
+                              "type": "string",
+                              "description": "String"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "AisAntena": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the AIS antenna or server"
+            },
+            "version": {
+              "type": "number",
+              "description": "AIS version"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "required": ["id", "type", "PortAuthority", "Port", "Posidonia"]
+}

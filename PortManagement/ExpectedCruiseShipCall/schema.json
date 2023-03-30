@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/ExpectedCruiseShipCall/schema.json",
+  "title": "DataPorts - ExpectedCruiseShipCall schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "vessel": {
+          "type": "object",
+          "properties": {
+            "shipName": {
+              "type": "string",
+              "description": "Name of the vessel"
+            },
+            "IMO": {
+              "type": "number",
+              "description": "IMO ship ID number"
+            },
+            "shipTypeCategory": {
+              "type": "string",
+              "enum": [
+                "CONTAINER",
+                "GENERAL CARGO NON SPECIALIZED",
+                "LIQUID BULK",
+                "DRY BULK",
+                "CRUISE"
+              ],
+              "description": "Description of vessel category"
+            },
+            "shipTypeClass": {
+              "type": "string",
+              "enum": [
+                "MULTI-DECKER",
+                "CHEMICAL TANKER",
+                "FULL CONTAINER",
+                "OIL TANKER",
+                "BULK CARRIER",
+                "LG TANKER"
+              ],
+              "description": "Description of vessel class"
+            }
+          },
+          "description": "Cruise ship vessel"
+        },
+        "ETA": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Estimated date/time of ship docking"
+        },
+        "ETD": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Estimated date/time of ship undocking"
+        },
+        "passengers": {
+          "type": "number",
+          "description": "No of passengers"
+        },
+        "previousPort": {
+          "type": "string",
+          "description": "Name of previous porT"
+        },
+        "nextPort": {
+          "type": "string",
+          "description": "Name of next port"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "vessel",
+    "ETA",
+    "ETD"
+  ]
+}

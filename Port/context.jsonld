@@ -1,0 +1,9 @@
+{
+    "@context": {
+        "geometry": "https://uri.etsi.org/ngsi-ld/geometry",
+        "geometryDescription": "https://dataports-project.eu/dataModel.Port#geometryDescription",
+        "portCode": "https://dataports-project.eu/dataModel.Port#portCode",
+        "portName": "https://dataports-project.eu/dataModel.Port#portName"
+    },
+    "generatedAt": "2022-09-12T10:00:13+00:00"
+}

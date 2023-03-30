@@ -1,0 +1,12 @@
+{
+  "id": "container-uf9zxd8xxfyh",
+  "type": "string",
+  "ID": "string",
+  "arrival": "2021-07-05T18:00:00",
+  "size": "string",
+  "loaded": 2021,
+  "voyageCode": "string",
+  "vesselName ": "string",
+  "companyID": "string",
+  "agentID": "string"
+}

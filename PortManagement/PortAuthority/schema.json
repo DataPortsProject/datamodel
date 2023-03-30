@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/Port/schema.json",
+  "title": "DataPorts - Port schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "portAuthorityCode": {
+          "type": "number",
+          "description": "Internal ID of the Port Authority"
+        },
+        "portAuthorityName": {
+          "type": "string",
+          "description": "Name of the Port Authority. Nuevo no forma parte de PortAuthority"
+        }
+      }
+    }
+  ],
+  "required": ["id", "type"]
+}

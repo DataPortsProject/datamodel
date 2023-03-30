@@ -1,0 +1,39 @@
+    {
+        "id": "urn:ngsi-ld:ThPA:ExpectedCruiseShipCall",
+        "type": "ExpectedCruiseShipCall",
+        "ETA": {
+            "type": "Text",
+            "value": "2023-02-10T07:30:00",
+            "metadata": {}
+        },
+        "ETD": {
+            "type": "Text",
+            "value": "2023-02-10T22:00:00",
+            "metadata": {}
+        },
+        "nextPort": {
+            "type": "Text",
+            "value": "Kusadasi",
+            "metadata": {}
+        },
+        "passengers": {
+            "type": "Number",
+            "value": 0,
+            "metadata": {}
+        },
+        "previousPort": {
+            "type": "Text",
+            "value": "Volos",
+            "metadata": {}
+        },
+        "vessel": {
+            "type": "StructuredValue",
+            "value": {
+                "shipName": "VIKING SKY",
+                "IMO": 8712345,
+                "shipTypeCategory": "CRUISE",
+                "shipTypeClass": "MULTI-DECKER"
+            },
+            "metadata": {}
+        }
+    }

@@ -1,0 +1,276 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Customs/Customs/schema.json",
+  "title": "DataPorts - Customs schema",
+  "description": "Customs class (extends TrackableEntity). Aggregated statitistic of the external commerce recorded in the spanish customs provided by the spanish Tax Agency",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "customsProcedureID":{
+          "type": "string",
+            "description": "ID of de Custom Procedure"
+        },
+        "declaringParty":{
+          "type": "object",
+          "description": "Declaring party"
+        },
+        "exportingParty":{
+          "type": "object",
+          "description": "Exporting party"
+        },
+        "importingParty":{
+          "type": "object",
+          "description": "Importing party"
+        },
+        "depotParty":{
+          "type": "object",
+          "description": "Depot party"
+        },
+        "customsOffice":{
+          "type": "object",
+          "description": "Customs office party"
+        },
+        "customsLocation": {
+          "type": "object",
+          "description": "Customs Location"
+        },
+        "customsProvince": {
+            "type": "number",
+            "description": "Numerical codes of the Spanish districts/provinces with customs"
+        },
+        "customs": {
+          "type": "string",
+          "description": "Customs Status"
+        },
+        "customsRegime": {
+          "type": "string",
+          "description": "Export/Import/Transshipment"
+        },
+        "customsStatus": {
+          "type": "string",	
+          "description": "Dispatched/Non Dispatched"
+        },
+        "customsRegimeRequested": {
+             "type": "number",
+             "description": "Customs regime requested"
+        },
+        "customsDocumentGrossWeight": {
+          "type": "number" ,
+          "description": "Weight (g)"
+        },
+        "customsDocumentType": {
+          "type": "string",
+          "description": "Type of document: DUA/DUE/DVD/ATA/JEC" 
+        },
+        "customsDocumentAdmissionDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Admission date of the customs document"
+        },
+        "customDocumentOriginCountry": {
+          "type": "string",
+          "description": "ISO code"
+        },
+        "customDocumentOriginProvince": {
+          "type": "number",
+          "description": "Postal code"
+        },
+        "customDocumentDestinationCountry": {
+          "type": "string",
+          "description": "ISO code"
+        },
+        "customDocumentDestinationProvince": {
+          "type": "number",
+          "description": "Postal code"
+        },
+        "exportLocation": {
+          "type": "object",
+            "description": "Export Location"
+        },
+        "year": {
+          "type": "number",
+            "description": "Number of the year"
+        },
+        "month": {
+            "type": "number",
+            "description": "Number of the month"
+        },
+        "TARIC": {
+          "type": "number",
+          "description": "Goods TARIC number (10 digits)"
+        },
+        "TARIC_N4": {
+          "type": "number",
+          "description": "Goods TARIC category (4 digits)"
+        },
+        "packageType": {
+          "type": "string",
+          "description": "ICS Package code"
+        },
+        "packageQuantity": {
+          "type": "number",
+          "description": "Number of packages per container"
+        },
+        "portIndex": {
+          "type": "number",
+          "description": "Valencia (1), Sagunto (3), Gandia (2)"
+        },
+        "origin": {
+          "type": "object",
+            "description": "Origin location"
+        },
+        "originExpeditionCountry": {
+            "type": "string",
+            "description": "ISO code of the country where the expedition was made"
+        },
+        "destination": {
+          "type": "object",
+          "description": "Destination Location"
+        },
+        "conveyor": {
+          "type": "object",
+          "description": "Conveyor Information"
+        },
+        "hasPredeclaration": {
+          "type": "boolean",
+          "description": "Whether has predeclaration or not"
+        },
+        "exitType": {
+          "type": "string",
+          "description": "Exit type"
+        },
+        "portCallReference": {
+          "type": "number",
+          "description": "PCS portcall code"
+        },
+        "automaticTranshipment": {
+          "type": "boolean",
+          "description": "Whether has automatic transhipment or not"
+        },
+        "seal": {
+          "type": "array",
+          "description": "Seals"
+        },
+        "precedingRegimeRequested": {
+            "type": "number",
+            "description": "Preceding regime requested"
+        },
+        "unitNumber": {
+            "type": "number",
+            "description": "Package quantity "
+        },
+        "statisticalValue": {
+            "type": "number",
+            "description": "Economic value of the goods when they cross the spanish border (cents)"
+        },
+        "invoiceValue": {
+            "type": "number",
+            "description": "Economic value showed in the invoice"
+        },
+        "countryCurrency": {
+            "type": "string",
+            "description": "The currency of the country (EUR)"
+        },
+        "container": {
+            "type": "number",
+            "description": "Yes (1)/No (0)"
+        },
+        "containerNumber": {
+          "type": "string",
+          "description": "Container number"
+        },
+        "containerType": {
+          "type": "string",
+          "description": "ISO 6346"
+        },
+        "containerOperationType": {
+          "type": "string",
+          "description":"Load/Discharge"
+        },
+        "containerNextPrevLoadDischargePortCode":{
+          "type": "string",	
+          "description": "International Port Code"
+        },
+        "containerGrossWeight": {
+          "type": "number",
+          "description": "Container Gross Weight"
+        },
+        "containerDeliveryPlaceCode": {
+          "type": "string",
+          "description": "International Port Code"
+        },
+        "containerDischargePortCode": {
+          "type": "string",
+          "description": "International Port Code"
+        },
+        "isVGM": {
+          "type": "boolean",
+          "description": "Whether is VGM or no"
+        },
+        "fullEmpty":{
+          "type": "string",
+          "description":"Whether is empty or not"
+        },
+        "transportRegime": {
+            "type": "string",
+            "description": "Transport regime"
+        },
+        "transportModeOnBorder": {
+            "type": "number",
+            "description": "UNECE code"
+        },
+        "countryTransportMode": {
+            "type": "number",
+            "description": "UNECE code"
+        },
+        "transportNationality": {
+            "type": "string",
+            "description": "ISO code"
+        },
+        "exchangeZone": {
+            "type": "string",
+            "description": "C = European Union, T = Third countries"
+        },
+        "transactionNature": {
+            "number": "number",
+            "description": "Customs Transaction. Nature Codes"
+        },
+        "deliveryConditions": {
+            "type": "string",
+            "description": "Incoterms 2020"
+        },
+        "contingent": {
+            "type": "number",
+            "description": "Contingent Id within the Communitary Regulation (Not mandatory)"
+        },
+        "tariffPreference": {
+            "type": "number",
+            "description": "Duty regime"
+        },
+        "vesselFreight": {
+            "type": "number",
+            "description": "Vessel freight code"
+        },
+        "fiscalAddressProvince": {
+            "type": "number",
+            "description": "Fiscal postal code"
+        },
+        "additionalCodes": {
+          "type": "string",
+          "description": "Additional codes"
+      }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

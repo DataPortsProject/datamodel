@@ -1,0 +1,37 @@
+{
+  "id": "transport-6bduadd5ey5t",
+  "type": "transport",
+  "transportType": [
+    "Air",
+    " Inland",
+    " Ocean"
+  ],
+  "registration": "string",
+  "ctnTyp": "string",
+  "reefer": true,
+  "seal": "string",
+  "packTyp": "string",
+  "sumQuantity": 2021,
+  "sumGrossWeight": 2021,
+  "udWeight": "string",
+  "sumValueGoods": 2021,
+  "currencyVal": "string",
+  "descriptionsOfGoods": "string",
+  "loadingPort": "string",
+  "dischargePort": "string",
+  "originAirport": "string",
+  "destinationAirport": "string",
+  "originCountry": "string",
+  "destinationCountry": "string",
+  "shipComp": "string",
+  "airline": "string",
+  "incoterm": "string",
+  "code": "string",
+  "flighNumber": "string",
+  "numAwb": "string",
+  "termsOfPayment": [
+    "Prepaid",
+    " collect",
+    " mixed"
+  ]
+}

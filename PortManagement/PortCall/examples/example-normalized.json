@@ -1,0 +1,46 @@
+{
+    "id": "urn:ngsi-ld:PortCall:VPF:1202106029",
+    "type": "PortCall",
+    "terminal": {
+        "type": "Text",
+        "value": "VALENCIA TERMINAL EUROPA, S.A.",
+        "metadata": {}
+    },
+    "UNLOCODE": {
+        "type": "Text",
+        "value": "ESVLC",
+        "metadata": {}
+    },
+    "arrivalDate": {
+        "type": "Text",
+        "value": "2021-12-01T00:46:00Z",
+        "metadata": {}
+    },
+    "departureDate": {
+        "type": "Text",
+        "value": "2021-12-01T11:35:00Z",
+        "metadata": {}
+    },
+    "regularLine": {
+        "type": "Text",
+        "value": "GRIMALDI - SHORT SEA SERVICE B",
+        "metadata": {}
+    },
+    "vessel": {
+        "type": "StructuredValue",
+        "value": {
+            "shipName": "ECO BARCELONA"
+        },
+        "metadata": {}
+    },
+    "vesselAgent": {
+        "type": "Text",
+        "value": "GRIMALDI LOGISTICA ESPAÑA S.L.",
+        "metadata": {}
+    },
+    "voyageCode": {
+        "type": "Text",
+        "value": "1202106029",
+        "metadata": {}
+    }
+}

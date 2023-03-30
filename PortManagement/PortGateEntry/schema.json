@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/PortGateEntry/schema.json",
+  "title": "DataPorts - PortGateEntry schema",
+  "description": "Data of access through the entry gate. Gate open or closed, gauge, data of the recognition of the vehicle's license plate carried out.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "lane": {
+          "type": "number",
+          "description": "Lane"
+        },
+        "startTime": {
+          "type": "string",
+          "description": "Event start time"
+        },
+        "endTime": {
+          "type": "string",
+          "description": "Event end time"
+        },
+        "entry_barrierOpen": {
+          "type": "boolean",
+          "description": "First Barrier open"
+        },
+        "entry_barrierManual": {
+          "type": "boolean",
+          "description": "Barrier manual"
+        },
+        "entry_galibo": {
+          "type": "boolean",
+          "description": "Galibo lights"
+        },
+        "CAS_blocked": {
+          "type": "boolean",
+          "description": "Radiation lane blocked"
+        },
+        "CAS_alarmGamma": {
+          "type": "boolean",
+          "description": "Radiation Gamma alarm"
+        },
+        "CAS_alarmNeutrons": {
+          "type": "boolean",
+          "description": "Radiation Neutrons alarm"
+        },
+        "LPR_hitechTruckPlate": {
+          "type": "string",
+          "description": "Hitech Truck plate"
+        },
+        "LPR_hitechTruckPlateReliability": {
+          "type": "number",
+          "description": "HitechTruck plate reliability"
+        },
+        "LPR_simecTruckPlate": {
+          "type": "string",
+          "description": "Simec Truck plate"
+        },
+        "LPR_simecTruckPlateReliability": {
+          "type": "number",
+          "description": "Simec Truck plate reliability"
+        },
+        "OCR_container": {
+          "type": "string",
+          "description": "Container number"
+        },
+        "OCR_containerReliability": {
+          "type": "number",
+          "description": "Container number reliability"
+        },
+        "exit_barrierOpen": {
+          "type": "boolean",
+          "description": "Second barrier open"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

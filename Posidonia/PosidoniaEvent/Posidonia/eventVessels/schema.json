@@ -1,0 +1,163 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Posidonia/PosidoniaEvent/Posidonia/eventVessels/schema.json",
+  "title": "DataPorts - Posidonia schema",
+  "description": "Data Model that will cover one of the sub-entities used by Posidonia entity.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "vesselName": {
+          "type": "string",
+          "description": "Name of the vessel"
+        },
+        "vesselCode": {
+          "type": "number",
+          "description": "Internal ID of the Vessel. Numeric (Long)"
+        },
+        "vesselType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Tye of the Vessel. Numeric (Enum)",
+              "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 52, 74]
+            },
+            "description": {
+              "type": "string",
+              "description": "Description of Vessel's type",
+              "enum": ["NOT_AVAILABLE", "TUG", "CARGO,_HAZARDOUS_CATEGORY_D"]
+            }
+          }
+        },
+        "IMO": {
+          "type": "number",
+          "description": "IMO Ship ID number. Numeric (Long)"
+        },
+        "MMSI": {
+          "type": "number",
+          "description": "Maritime Mobile Service Identity of the Vessel. Numeric (Long)"
+        },
+        "toStern": {
+          "type": "number",
+          "description": "Dimension to stern. Numeric (Long)"
+        },
+        "toPort": {
+          "type": "number",
+          "description": "Dimension to port. Numeric (Long)"
+        },
+        "toStarboard": {
+          "type": "number",
+          "description": "Dimension to starboard. Numeric (Long)"
+        },
+        "callSign": {
+          "type": "string",
+          "description": "Call sign (String)"
+        },
+        "draught": {
+          "type": "number",
+          "description": "Ship draught. Numeric (Float)"
+        },
+        "accuracy": {
+          "type": "boolean",
+          "description": "Position accuracy"
+        },
+        "raim": {
+          "type": "boolean",
+          "description": "RAIM (Receiver Autonomous Integrity Monitoring) flag"
+        },
+        "radio": {
+          "type": "number",
+          "description": "Radio status (Long)"
+        },
+        "dte": {
+          "type": "boolean",
+          "description": "Data Terminal Equipment (Available / Not Available)."
+        },
+        "status": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Status of the Vessel (Enum)",
+              "enum": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+            },
+            "description": {
+              "type": "string",
+              "description": "Meaning of the Vessel's status"
+            }
+          }
+        },
+        "speed": {
+          "type": "number",
+          "description": "Speed over the ground (knots). Float"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude (Float)"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude (Float)"
+        },
+        "maneuver": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Maneuver indicator (Enum)",
+              "enum": [0, 1, 2, 3]
+            },
+            "description": {
+              "type": "string",
+              "description": "Meaning of Maneuver indicator"
+            }
+          }
+        },
+        "destination": {
+          "type": "string",
+          "description": "Ship destination"
+        },
+        "course": {
+          "type": "number",
+          "description": "Course over the ground (COG). Float"
+        },
+        "heading": {
+          "type": "number",
+          "description": "True heading (HDG). Long"
+        },
+        "turn": {
+          "type": "number",
+          "description": "Rate of turn (ROT). Float"
+        },
+        "month": {
+          "type": "number",
+          "description": "ETA month. Numeric (Long)"
+        },
+        "day": {
+          "type": "number",
+          "description": "ETA day. Numeric (Long)"
+        },
+        "hour": {
+          "type": "number",
+          "description": "ETA hour. Numeric (Long)"
+        },
+        "minute": {
+          "type": "number",
+          "description": "ETA minute. Numeric (Long)"
+        },
+        "second": {
+          "type": "number",
+          "description": "Timestamp. Numeric (Long)"
+        }
+      }
+    }
+  ],
+  "required": ["vesselName", "IMO", "MMSI"]
+}

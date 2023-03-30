@@ -1,0 +1,19 @@
+{
+  "id": "urn:ngsi-ld:DataSource:TravelPath:9nxet6zwip4l",
+  "type": "TravelPath",
+  "pathID": 2021,
+  "pathName": "string",
+  "originDevice": {
+    "pathOriginDeviceID": 2021,
+    "pathOriginDeviceName": "string",
+    "pathOriginDeviceLat": 2021,
+    "pathOriginDeviceLon": 2021
+  },
+  "destinationDevice": {
+    "pathDestinationDeviceID": 2021,
+    "pathDestinationDeviceName": "string",
+    "pathDestinationDeviceLat": 2021,
+    "pathDestinationDeviceLon": 2021
+  },
+  "polyline": "string"
+}

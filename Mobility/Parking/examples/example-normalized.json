@@ -1,0 +1,59 @@
+    {
+        "id": "urn:ngsi-ld:ThPA:Parking",
+        "type": "Parking",
+        "capacity": {
+            "type": "Number",
+            "value": 239,
+            "metadata": {}
+        },
+        "datetimeSlot": {
+            "type": "Text",
+            "value": "2022-09-05T09:00:00",
+            "metadata": {}
+        },
+        "maximumNonReserved": {
+            "type": "Number",
+            "value": 66,
+            "metadata": {}
+        },
+        "meanNonReserved": {
+            "type": "Number",
+            "value": 42,
+            "metadata": {}
+        },
+        "minimumNonReserved": {
+            "type": "Number",
+            "value": 26,
+            "metadata": {}
+        },
+        "overallTakenParkingSpots": {
+            "type": "Number",
+            "value": 45,
+            "metadata": {}
+        },
+        "parkingID": {
+            "type": "Number",
+            "value": 1,
+            "metadata": {}
+        },
+        "percentageOfNonReserved": {
+            "type": "Number",
+            "value": 18,
+            "metadata": {}
+        },
+        "percentageOfReserved": {
+            "type": "Number",
+            "value": 100,
+            "metadata": {}
+        },
+        "percentageOfTakenSpots": {
+            "type": "Number",
+            "value": 18.7,
+            "metadata": {}
+        },
+        "reservedSpots": {
+            "type": "Number",
+            "value": 2,
+            "metadata": {}
+        }
+    }

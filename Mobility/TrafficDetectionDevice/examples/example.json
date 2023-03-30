@@ -1,0 +1,8 @@
+{
+  "id": "urn:ngsi-ld:DataSource:TrafficDetectionDevice:r37rzlmj71ui",
+  "type": "TrafficDetectionDevice",
+  "deviceID": 2021,
+  "deviceName": "string",
+  "latitude": 2021,
+  "longtitude": 2021
+}

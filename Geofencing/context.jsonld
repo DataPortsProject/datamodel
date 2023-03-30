@@ -1,0 +1,26 @@
+{
+    "@context": {
+        "asset": "https://dataports-project.eu/dataModel.Geofencing#asset",
+        "createdDate": {
+            "@id": "https://dataports-project.eu/dataModel.Geofencing#createdDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "entryDate": {
+            "@id": "https://dataports-project.eu/dataModel.Geofencing#entryDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "geofenceZone": "https://dataports-project.eu/dataModel.Geofencing#geofenceZone",
+        "geofenceZoneId": "https://dataports-project.eu/dataModel.Geofencing#geofenceZoneId",
+        "ingeofenceZone": "https://dataports-project.eu/dataModel.Geofencing#ingeofenceZone",
+        "lastmodifiedDate": {
+            "@id": "https://dataports-project.eu/dataModel.Geofencing#lastmodifiedDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "leavingDate": {
+            "@id": "https://dataports-project.eu/dataModel.Geofencing#leavingDate",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
+        },
+        "name": "https://uri.etsi.org/ngsi-ld/name"
+    },
+    "generatedAt": "2022-09-12T09:47:31+00:00"
+}

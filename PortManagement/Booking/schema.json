@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/Booking/schema.json",
+  "title": "DataPorts - Booking schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "bookingNumber": {
+          "type": "number",
+          "description": "Unique ID of the booking"
+        },
+        "bookingDate": {
+          "type": "number",
+          "description": "Booking date"
+        },
+        "company": {
+          "type": "string",
+          "description": "Company making the booking"
+        },
+        "enterDate": {
+          "type": "number",
+          "description": "Actual time of entering"
+        },
+        "originalWindowFrom": {
+          "type": "number",
+          "description": "Originally booked time window to enter"
+        },
+        "actualWindowFrom": {
+          "type": "number",
+          "description": "Time window actually used, if arrival was 15\u2019 earlier"
+        },
+        "originalWindowTo": {
+          "type": "number",
+          "description": "Originally estimated time window to leave"
+        },
+        "actualWindowTo": {
+          "type": "number",
+          "description": "Time window actually used"
+        },
+        "windowDate": {
+          "type": "number",
+          "description": "Date of the time window"
+        },
+        "bookingStatus": {
+          "type": "string",
+          "enum": [
+            "Pending",
+            "No show",
+            "Visited",
+            "Cancelled by user (on time)",
+            "No-slot booking"
+          ],
+          "description": "Booking status"
+        },
+        "containersImport": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Number of containers to drop-off to the CT yard"
+        },
+        "containersExport": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Number of containers to pick-up from the CT yard"
+        },
+        "exportContainer1": {
+          "type": "string",
+          "description": "Unique container ID for 1st container to be picked-up"
+        },
+        "exportContainer2": {
+          "type": "string",
+          "description": "Unique container ID for 2nd container to be picked-up"
+        },
+        "importContainer1": {
+          "type": "string",
+          "description": "Unique container ID for 1st container to be dropped-off"
+        },
+        "importContainer2": {
+          "type": "string",
+          "description": "Unique container ID for 2nd container to be dropped-off"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "bookingNumber",
+    "bookingDate",
+    "company",
+    "bookingStatus",
+    "containersImport",
+    "containersExport"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+    "_id": "62b43cc1459e4d5150a650f5",
+    "id": "urn:ngsi-ld:TransportUnit:VPF:4938603490",
+    "type": "TransportUnit",
+    "version": "0.0",
+    "reportedByID": "CSLU@office",
+    "assetType": "transportUnit",
+    "userId": "system",
+    "ID": "TRLU123456@S202206111@CSLU@transportUnit",
+    "status": "executing",
+    "lastTrackableEvent": {
+      "ID": "2022-06-12T18:15:15.000Z@T11111111@46024@event",
+      "name": "storedItem",
+      "eventType": "gateIn",
+      "location": {
+        "address": {
+          "street": "Terminal",
+          "city": "Valencia",
+          "postalCode": "46024"
+        },
+        "position": {
+          "type": "Point",
+          "coordinates": [
+            39.47534441,
+            "-0.375657170"
+          ]
+        },
+        "location": "ESVLC",
+        "locationName": "VALENCIA"
+      },
+      "performedTime": "2022-06-12T19:15:15+01:00"
+    },
+    "transportUnitID": "TRLU123456",
+    "containerType": {
+      "code": "20GP"
+    },
+    "confirmedDate": "2022-06-12T11:08:15+01:00",
+    "eventFunction": "confirmed",
+    "shipment": {
+      "ID": "S202206111@CSLU@shipment",
+      "shipmentID": "S202206111",
+      "carrier": {
+        "ID": "CSLU@office"
+      }
+    },
+    "provider": {
+      "ID": "CSLU@office"
+    }
+  }
+  

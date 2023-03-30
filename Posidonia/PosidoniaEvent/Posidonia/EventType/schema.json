@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Posidonia/PosidoniaEvent/Posidonia/EventType/schema.json",
+  "title": "DataPorts - Posidonia schema",
+  "description": "Data Model that will cover one of the sub-entities used by Posidonia entity.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "Internal ID of the type of the event. Numeric (Long)",
+          "enum": [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+            20, 21, 22, 23, 24, 25, 26, 27, 28
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of this event",
+          "enum": [
+            "AIS_IN",
+            "WAYPOINT",
+            "STOP_OVER_IN",
+            "ANCHOR_IN",
+            "ANCHOR_OUT",
+            "PILOT_START",
+            "TUG_START",
+            "DOCK_STOP",
+            "DOCK_STOP_START",
+            "DOCK_START_OUT",
+            "PILOT_AWAY",
+            "TUG_AWAY",
+            "STOP_OVER_OUT",
+            "AIS_OUT",
+            "OIL_START",
+            "OIL_STOP",
+            "ANCHOR_IN_START",
+            "FORBIDDEN_ANCHOR_IN",
+            "DOCK_RESTOP",
+            "AIS_SWITCHED_OFF",
+            "AIS_SWITCHED_ON",
+            "AIS_FREQUENCY_TOO_LOW",
+            "ANCHOR_REIN",
+            "DOCK_APPROACH",
+            "CONTROL_ZONE_IN",
+            "CONTROL_ZONE_OUT",
+            "SPEED_LIMIT_EXCEEDED",
+            "ACNHOR_OUT_ASSUMED"
+          ]
+        }
+      }
+    }
+  ],
+  "required": ["value", "description"]
+}

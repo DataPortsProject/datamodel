@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/CommercialShipCall/schema.json",
+  "title": "DataPorts - CommercialShipCall schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "portCall": {
+          "type": "object",
+          "properties": {
+            "vessel": {
+              "type": "object",
+              "properties": {
+                "shipName": {
+                  "type": "string",
+                  "description": "Name of the vessel"
+                },
+                "IMO": {
+                  "type": "number",
+                  "description": "IMO ship ID number"
+                },
+                "shipTypeCategory": {
+                  "type": "string",
+                  "enum": [
+                    "CONTAINER",
+                    "GENERAL CARGO NON SPECIALIZED",
+                    "LIQUID BULK",
+                    "DRY BULK",
+                    "CRUISE"
+                  ],
+                  "description": "Description of vessel category"
+                },
+                "shipTypeClass": {
+                  "type": "string",
+                  "enum": [
+                    "MULTI-DECKER",
+                    "CHEMICAL TANKER",
+                    "FULL CONTAINER",
+                    "OIL TANKER",
+                    "BULK CARRIER",
+                    "LG TANKER"
+                  ],
+                  "description": "Description of vessel class"
+                }
+              },
+              "description": "Calling vessel"
+            },
+            "arrivalDate": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date/time of ship arrival at port area"
+            },
+            "departureDate": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Date/time of ship leaving port area"
+            },
+            "arrivalDateScheduled": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Scheduled date/time of ship arrival at port area, as declared by shipping agent"
+            },
+            "departureDateScheduled": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Scheduled date/time of ship arrival at port area, as declared by shipping agent"
+            }
+          },
+          "description": "Basic entity describing a ship's call at a port"
+        },
+        "timeProsdesi": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time of ship docking"
+        },
+        "timeApodesi": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time of ship undocking"
+        },
+        "startWork": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time of works starting"
+        },
+        "endWork": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date/time of works completed"
+        },
+        "workDescr": {
+          "type": "string",
+          "enum": [
+            "DEMBARKATION-UNLOADING",
+            "EMBARKATION-LOADING"
+          ],
+          "description": "Type of work"
+        },
+        "emporDescr": {
+          "type": "string",
+          "description": "Cargo type"
+        },
+        "cfEmpty": {
+          "type": "number",
+          "description": "Number of empty containers"
+        },
+        "cfEmforta": {
+          "type": "number",
+          "description": "Number of loaded (laden) containers"
+        },
+        "cfValue": {
+          "type": "number",
+          "description": "Number of containers OR tonnage when bulk"
+        },
+        "cfTonnage": {
+          "type": "number",
+          "description": "Tonnage when bulk OR total weight of containers"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "portCall",
+    "workDescr",
+    "emporDescr",
+    "cfEmpty",
+    "cfEmforta",
+    "cfValue",
+    "cfTonnage"
+  ]
+}

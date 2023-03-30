@@ -1,0 +1,12 @@
+{
+  "id": "urn:ngsi-ld:DataSource:Event:MRKU4807885:20000P0002103000175:1662256955000",
+  "type": "Event",
+  "equipment": "MRKU4807885",
+  "device": "20000P0002103000175",
+  "communicationDate": 1663584378612,
+  "lastmodifiedDate": 1663584378960,
+  "eventDate": 1662256955000,
+  "eventType": "01",
+  "gpsLatitude": "21.812023",
+  "gpsLongitude": "120.434761"
+}

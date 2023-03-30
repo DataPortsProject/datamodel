@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/LandTransport/Transport/schema.json",
+  "title": "DataPorts - Transport schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "transportType": {
+          "type": "string",
+          "enum": [
+            "Air",
+            "Inland",
+            "Ocean"
+          ],
+          "description": "Type of transport"
+        },
+        "registration": {
+          "type": "string",
+          "description": "Container number"
+        },
+        "ctnTyp": {
+          "type": "string",
+          "description": "ISO 6346"
+        },
+        "reefer": {
+          "type": "boolean",
+          "description": "Reffer"
+        },
+        "seal": {
+          "type": "string",
+          "description": "Seal"
+        },
+        "packTyp": {
+          "type": "string",
+          "description": "ICS Package code"
+        },
+        "sumQuantity": {
+          "type": "number",
+          "description": "Quantity"
+        },
+        "sumGrossWeight": {
+          "type": "number",
+          "description": "Gross Weight"
+        },
+        "udWeight": {
+          "type": "string",
+          "description": "unit of measurement"
+        },
+        "sumValueGoods": {
+          "type": "number",
+          "description": "Value of goods"
+        },
+        "currencyVal": {
+          "type": "string",
+          "description": "Currency value of goods"
+        },
+        "descriptionsOfGoods": {
+          "type": "string",
+          "description": "Description of goods"
+        },
+        "loadingPort": {
+          "type": "string",
+          "description": "Port of loading"
+        },
+        "dischargePort": {
+          "type": "string",
+          "description": "Port of discharge"
+        },
+        "originAirport": {
+          "type": "string",
+          "description": "Airport From ISO"
+        },
+        "destinationAirport": {
+          "type": "string",
+          "description": "Airport To ISO"
+        },
+        "originCountry": {
+          "type": "string",
+          "description": "Origin Country ISO"
+        },
+        "destinationCountry": {
+          "type": "string",
+          "description": "Destination Country ISO"
+        },
+        "shipComp": {
+          "type": "string",
+          "description": "Shipping company ISO"
+        },
+        "airline": {
+          "type": "string",
+          "description": "Airline ISO"
+        },
+        "incoterm": {
+          "type": "string",
+          "description": "Incoterm"
+        },
+        "code": {
+          "type": "string",
+          "description": "Vessel"
+        },
+        "flighNumber": {
+          "type": "string",
+          "description": "Fligh number"
+        },
+        "numAwb": {
+          "type": "string",
+          "description": "AWB Number"
+        },
+        "termsOfPayment": {
+          "type": "string",
+          "enum": [
+            "Prepaid",
+            "collect",
+            "mixed"
+          ],
+          "description": "Terms of payment"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

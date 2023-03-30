@@ -1,0 +1,20 @@
+{
+  "id": "vehicle-v7xqeiypnb9s",
+  "type": "vehicle",
+  "registrationNumber": "string",
+  "maker": "string",
+  "model": "string",
+  "colour": "string",
+  "company": "string",
+  "vehicleType": [
+    "Car",
+    "Motorbike",
+    "Container Truck",
+    "TIR Truck",
+    "THPA Car",
+    "THPA Heavy-duty",
+    "Taxi Van",
+    "Taxi",
+    "Unspecified"
+  ]
+}

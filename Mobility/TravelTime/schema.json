@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Mobility/TravelTime/schema.json",
+  "title": "DataPorts - TravelTime schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "travelPath": {
+          "type": "object",
+          "properties": {
+            "pathID": {
+              "type": "number",
+              "description": "The id of the path"
+            },
+            "pathName": {
+              "type": "string",
+              "description": "The name of the path"
+            },
+            "originDevice": {
+              "type": "object",
+              "properties": {
+                "pathOriginDeviceID": {
+                  "type": "number",
+                  "description": "The device id located at the origin of the path"
+                },
+                "pathOriginDeviceName": {
+                  "type": "string",
+                  "description": "The name of the path's origin device"
+                },
+                "pathOriginDeviceLat": {
+                  "type": "number",
+                  "description": "Latitude where the path origin device is located"
+                },
+                "pathOriginDeviceLon": {
+                  "type": "number",
+                  "description": "Longtitude where the path origin device is located"
+                }
+              },
+              "description": "Traffic detection device at the path's origin"
+            },
+            "destinationDevice": {
+              "type": "object",
+              "properties": {
+                "pathDestinationDeviceID": {
+                  "type": "number",
+                  "description": "The device id located at the destination of the path"
+                },
+                "pathDestinationDeviceName": {
+                  "type": "string",
+                  "description": "The name of the path's destination device"
+                },
+                "pathDestinationDeviceLat": {
+                  "type": "number",
+                  "description": "Latitude where the path destination device is located"
+                },
+                "pathDestinationDeviceLon": {
+                  "type": "number",
+                  "description": "Longtitude where the path destination device is located"
+                }
+              },
+              "description": "Traffic detection device at the path's destination"
+            },
+            "polyline": {
+              "type": "string",
+              "description": "The device's coordinates through the path"
+            }
+          },
+          "description": "The relevant travel path"
+        },
+        "duration": {
+          "type": "number",
+          "description": "Current travel time"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the most recent calculation update"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "pathID",
+    "pathOriginDeviceID",
+    "pathOriginDeviceLat",
+    "pathOriginDeviceLon",
+    "originDevice",
+    "pathDestinationDeviceID",
+    "pathDestinationDeviceLat",
+    "pathDestinationDeviceLon",
+    "destinationDevice",
+    "polyline",
+    "travelPath",
+    "duration",
+    "timestamp"
+  ]
+}

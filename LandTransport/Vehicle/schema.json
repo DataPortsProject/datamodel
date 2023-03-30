@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/LandTransport/Vehicle/schema.json",
+  "title": "DataPorts - Vehicle schema",
+  "description": "Generic class to define any land, sea, or air transport. Of each of these transports, its unique identification, transport type, fuel tank capacity, and register company are saved.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "registrationNumber": {
+          "type": "string",
+          "description": "License plate"
+        },
+        "maker": {
+          "type": "string",
+          "description": "Vehicle maker"
+        },
+        "model": {
+          "type": "string",
+          "description": "Vehicle model"
+        },
+        "colour": {
+          "type": "string",
+          "description": "Vehicle colour"
+        },
+        "company": {
+          "type": "string",
+          "description": "Company the vehicle belongs to"
+        },
+        "vehicleType": {
+          "type": "string",
+          "enum": [
+            "Car",
+            "Motorbike",
+            "Container Truck",
+            "TIR Truck",
+            "THPA Car",
+            "THPA Heavy-duty",
+            "Taxi Van",
+            "Taxi",
+            "Unspecified"
+          ],
+          "description": "Type of vehicle"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

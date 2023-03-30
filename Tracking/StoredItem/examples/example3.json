@@ -1,0 +1,159 @@
+{
+    "id": "urn:ngsi-ld:VPF:StoredItem:release",
+    "type": "StoredItem",
+	"_id": "62b43cbfb75a2444c4620a2f",
+    "version": "0.0",
+    "reportedByID": "T11111111@46024@office",
+    "reportedByRole": "depositary",
+    "assetType": "storedItem",
+    "userId": "6253213b42895e74bf030a50",
+    "ID": "S202206111.2@T11111111@46024@storedItem",
+    "status": "finished",
+    "lastTrackableEvent": {
+      "ID": "2022-06-12T18:15:15.000Z@T11111111@46024@event",
+      "name": "storedItem",
+      "eventType": "gateIn",
+      "location": {
+        "address": {
+          "street": "Terminal",
+          "city": "Valencia",
+          "postalCode": "46024"
+        },
+        "position": {
+          "type": "Point",
+          "coordinates": [
+            39.47534441,
+            "-0.375657170"
+          ]
+        },
+        "location": "ESVLC",
+        "locationName": "VALENCIA"
+      },
+      "performedTime": "2022-06-12T19:15:15+01:00"
+    },
+    "storedItemID": "S202206111.2",
+    "orderDate": "2022-06-11T12:52:00+01:00",
+    "depositor": {
+      "ID": "CSLU@office"
+    },
+    "agent": {
+      "ID": "A11111111@46024@office",
+      "role": "agent",
+      "organization": {
+        "code": "A11111111",
+        "name": "AGENTE MARÍTIMO"
+      },
+      "office": {
+        "code": "46024",
+        "name": "VALÈNCIA"
+      },
+      "address": {
+        "city": "VALÈNCIA",
+        "postalCode": "46024",
+        "province": "VALENCIA/VALÈNCIA"
+      }
+    },
+    "depositary": {
+      "ID": "T11111111@46024@office",
+      "role": "depositary",
+      "organization": {
+        "code": "T11111111",
+        "name": "TERMINAL"
+      },
+      "office": {
+        "code": "46024",
+        "name": "VALÈNCIA"
+      },
+      "address": {
+        "city": "VALÈNCIA",
+        "postalCode": "46024",
+        "province": "VALENCIA/VALÈNCIA"
+      }
+    },
+    "gateInOperations": [
+      {
+        "type": "gateIn",
+        "value": "S202206111.2",
+        "status": "finished",
+        "eta": "2022-06-12T19:00:00+01:00",
+        "ata": "2022-06-12T19:08:00+01:00",
+        "atd": "2022-06-12T19:30:30+01:00",
+        "confirmedDate": "2022-06-12T19:15:15+01:00",
+        "validFrom": "2022-06-12T00:00:00+01:00",
+        "expiryDate": "2022-06-15T00:00:00+01:00",
+        "eventFunction": "confirmed",
+        "authorisedParty": {
+          "ID": "F11111111@46024@office",
+          "organization": {
+            "code": "F11111111",
+            "name": "FORWARDER TRANSITARIA"
+          },
+          "office": {
+            "code": "46024",
+            "name": "VALÈNCIA"
+          },
+          "address": {
+            "city": "VALÈNCIA",
+            "postalCode": "46024",
+            "province": "VALENCIA/VALÈNCIA"
+          }
+        },
+        "location": {
+          "location": "ESVLC",
+          "locationName": "VALENCIA",
+          "address": {
+            "street": "Terminal",
+            "city": "Valencia",
+            "postalCode": "46024"
+          },
+          "position": {
+            "type": "Point",
+            "coordinates": [
+              39.47534441,
+              "-0.375657170"
+            ]
+          }
+        },
+        "transport": {
+          "ID": "006@W44444444@46024@transport",
+          "transportID": "006",
+          "identification": {
+            "code": "ABC1234"
+          },
+          "carrier": {
+            "ID": "W44444444@46024@office",
+            "organization": {
+              "code": "W44444444",
+              "name": "TRANSPORTISTA"
+            },
+            "office": {
+              "code": "46024",
+              "name": "VALÈNCIA"
+            },
+            "address": {
+              "city": "VALÈNCIA",
+              "postalCode": "46024",
+              "province": "VALENCIA/VALÈNCIA"
+            }
+          }
+        },
+        "transportUnits": [
+          {
+            "transportUnitID": "TRLU123456",
+            "eventFunction": "confirmed",
+            "containerType": {
+              "code": "20GP"
+            },
+            "shipment": {
+              "ID": "S202206111@CSLU@shipment",
+              "shipmentID": "S202206111",
+              "carrier": {
+                "ID": "CSLU@office"
+              }
+            }
+          }
+        ],
+        "unitsCount": 1
+      }
+    ]
+  }

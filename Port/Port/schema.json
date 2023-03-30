@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Port/Port/schema.json",
+  "title": "DataPorts - Port schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "portCode": {
+          "type": "string",
+          "description": "Code of the Port"
+        },
+        "portName": {
+          "type": "string",
+          "description": "Name of the port. Nuevo no forma forma de Port"
+        }
+      }
+    }
+  ],
+  "required": ["id", "type"]
+}

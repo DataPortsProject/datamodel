@@ -1,0 +1,15 @@
+{
+  "id": "urn:ngsi-ld:ThPA:Parking",
+  "type": "Parking",
+  "parkingID": 1,
+  "capacity": 239,
+  "datetimeSlot": "2022-09-05T09:00:00",
+  "minimumNonReserved": 26,
+  "maximumNonReserved": 66,
+  "meanNonReserved": 42,
+  "percentageOfNonReserved": 18.0,
+  "reservedSpots": 2,
+  "percentageOfReserved": 100.0,
+  "overallTakenParkingSpots": 45,
+  "percentageOfTakenSpots": 18.7
+}

@@ -1,0 +1,60 @@
+{
+    "_id": "6351e7699df1890305392e35",
+    "id": "urn:ngsi-ld:TransportUnit:VPF:7979646054",
+    "type": "TransportUnit",
+    "version": "0.0",
+    "reportedByID": "A61361796@46023@office",
+    "assetType": "transportUnit",
+    "userId": "system",
+    "ID": "TLLU4058460@6884410410W@CCBC@transportUnit",
+    "status": "executing",
+    "transportUnitID": "TLLU4058460",
+    "containerType": {
+      "code": "4510"
+    },
+    "containerStatus": "full",
+    "shipment": {
+      "ID": "6884410410W@CCBC@shipment",
+      "shipmentID": "6884410410W",
+      "bolNumber": "6884410410W",
+      "requestorReference": "2021149037",
+      "carrier": {
+        "ID": "CCBC@office",
+        "organization": {
+          "code": "CCBC",
+          "name": "COSCO Shipping Lines"
+        }
+      }
+    },
+    "provider": {
+      "ID": "A61361796@46023@office",
+      "role": "provider",
+      "organization": {
+        "code": "A61361796",
+        "name": "Cosco Shipping Lines Spain S.A. (Valencia)"
+      },
+      "office": {
+        "code": "46023",
+        "name": "Valencia"
+      },
+      "address": {
+        "street": "Menorca, 19, planta 11 - Edificio AQUA",
+        "city": "Valencia",
+        "postalCode": "46023",
+        "province": "Valencia/València",
+        "country": {
+          "code": "ES",
+          "name": "ESPAÑA"
+        }
+      },
+      "codes": [
+        "T073"
+      ]
+    },
+    "seals": [
+      {
+        "owner": "carrier",
+        "number": "15149996"
+      }
+    ]
+  }

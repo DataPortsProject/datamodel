@@ -1,0 +1,25 @@
+{
+  "id": "urn:ngsi-ld:DataSource:Event:MRSU5826521:BC000017348:1661266290000",
+  "type": "Event",
+  "equipment": { "value": "MRSU5826521", "type": "Text" },
+  "device": { "value": "BC000017348", "type": "Text" },
+  "lastmodifiedDate": { "value": 1661266686262, "type": "Number" },
+  "eventDate": { "value": 1661266290000, "type": "Number" },
+  "eventType": { "value": "TRAXENS_HUB_GEOFENCING", "type": "Text" },
+  "sensorName": { "value": "GEOFENCING", "type": "Text" },
+  "sensorValue": { "value": "IN_to_OUT", "type": "Text" },
+  "sensorValues": {
+    "value": [
+      {
+        "TRANSITION": "IN_to_OUT",
+        "ZOI_NAME": "Antwerpen",
+        "LOCATION_CODE": "BEANR",
+        "ZOI_GEO_ZONE": "Europe/Brussels",
+        "ZOI_CODE": "BEANR",
+        "LOCATION_NAME": "Antwerpen",
+        "ZOI_TYPE": "LOC"
+      }
+    ],
+    "type": "Array"
+  }
+}

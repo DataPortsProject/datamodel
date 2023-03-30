@@ -1,0 +1,13 @@
+{
+  "id": "vessel-6faues424ciu",
+  "type": "vessel",
+  "shipName": "string",
+  "arrivalDate": "2021-07-05T18:00:00",
+  "departureDate": "2021-07-05T18:00:00",
+  "containersId": 2021,
+  "size": {
+    "length": 399,
+    "draft": 201
+  },
+  "country": "urn:ngsi:DataModel:001"
+}

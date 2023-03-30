@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/SeaTransport/Vessel/schema.json",
+  "title": "DataPorts - Vessel schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "shipName": {
+          "type": "string",
+          "description": "Name of the vessel"
+        },
+        "IMO": {
+          "type": "number",
+          "description": "IMO ship ID number"
+        },
+        "shipTypeCategory": {
+          "type": "string",
+          "enum": [
+            "CONTAINER",
+            "GENERAL CARGO NON SPECIALIZED",
+            "LIQUID BULK",
+            "DRY BULK"
+          ],
+          "description": "Description of vessel category"
+        },
+        "shipTypeClass": {
+          "type": "string",
+          "enum": [
+            "MULTI-DECKER",
+            "CHEMICAL TANKER",
+            "FULL CONTAINER",
+            "OIL TANKER",
+            "BULK CARRIER",
+            "LG TANKER"
+          ],
+          "description": "Description of vessel class"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "shipName",
+    "shipTypeCategory",
+    "shipTypeClass"
+  ]
+}

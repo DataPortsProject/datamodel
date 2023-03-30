@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Cargo/CargoManifest/schema.json",
+  "title": "DataPorts - CargoManifest schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "year": {
+          "type": "number",
+          "description": "Year of the manifest"
+        },
+        "code": {
+          "type": "number",
+          "description": "ID of the manifest"
+        },
+        "ETA": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp in millis"
+        },
+        "ETD": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp in millis"
+        },
+        "number": {
+          "type": "string",
+          "description": "Declaration number"
+        },
+        "state": {
+          "type": "string",
+          "description": "State code"
+        },
+        "consignee": {
+          "type": "number",
+          "description": "Consignee ID"
+        },
+        "declaration": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp in millis"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "urn:ngsi-ld:PortCall:THPA",
+  "type": "PortCall",
+  "vessel": {
+    "shipName": "string",
+    "IMO": 2021,
+    "shipTypeCategory": "CONTAINER",
+    "shipTypeClass": "FULL CONTAINER"
+  },
+  "voyageCode": "string",
+  "arrivalDate": "2021-07-05T18:00:00",
+  "departureDate": "2021-07-05T18:00:00",
+  "arrivalDateScheduled": "2021-07-05T18:00:00",
+  "departureDateScheduled": "2021-07-05T18:00:00"
+}

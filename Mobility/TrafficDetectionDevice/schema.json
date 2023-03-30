@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Mobility/TrafficDetectionDevice/schema.json",
+  "title": "DataPorts - TrafficDetectionDevice schema",
+  "description": "Device placed at selected location to record traffic detections",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "deviceID": {
+          "type": "number",
+          "description": "The id of the device"
+        },
+        "deviceName": {
+          "type": "string",
+          "description": "The name of the device"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude where the device is located"
+        },
+        "longtitude": {
+          "type": "number",
+          "description": "Longtitude where the device is located"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "deviceID",
+    "latitude",
+    "longtitude"
+  ]
+}

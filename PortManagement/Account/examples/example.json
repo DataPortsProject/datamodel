@@ -1,0 +1,32 @@
+{
+  "id": "account-3eub4n4slu7b",
+  "type": "account",
+  "operationNumber": "string",
+  "code": "string",
+  "userId": "string",
+  "companyVat": "string",
+  "companyName": "string",
+  "accountType": [
+    "credit",
+    " debit"
+  ],
+  "amount": 2021,
+  "date": "2021-07-05T18:00:00",
+  "vgmCode": 2021,
+  "vgmId": "string",
+  "vgmReference": "string",
+  "vgmContainerNumber": "string",
+  "fee": 2021,
+  "entityVat": "string",
+  "entityName": "string",
+  "automatic": true,
+  "currency": "string",
+  "order": "string",
+  "merchantName": "string",
+  "merchantCode": "string",
+  "transactionType": "string",
+  "terminal": "string",
+  "merchantURL": "string",
+  "successURL": "string",
+  "errorURL": "string"
+}

@@ -1,0 +1,47 @@
+{
+    "_id" : "62b43cbab75a242a25620a27",
+    "id": "urn:ngsi-ld:TrackableEvent:VPF:3804510780",
+    "type": "TrackableEvent",
+    "reportedByID" : "Z22222222@46024@office",
+    "name" : "shipment",
+    "eventType" : "requested",
+    "eventFunction" : "added",
+    "trackableEntityID" : "X202206081@W44444444@46024@shipment",
+    "performedTime" : "2022-06-23T10:13:14.988Z",
+    "references" : [
+            {
+                    "type" : "shipment",
+                    "value" : "X202206081"
+            },
+            {
+                    "type" : "transport"
+            }
+    ],
+    "shipments" : [
+            {
+                    "ID" : "X202206081@W44444444@46024@shipment",
+                    "requestorReference" : "X202206081",
+                    "transportMode" : "road",
+                    "transportUnitType" : "pallet",
+                    "requestor" : {
+                            "ID" : "Z22222222@46024@office"
+                    },
+                    "carrier" : {
+                            "ID" : "W44444444@46024@office",
+                            "organization" : {
+                                    "code" : "W44444444",
+                                    "name" : "TRANSPORTISTA"
+                            },
+                            "office" : {
+                                    "code" : "46024",
+                                    "name" : "VALÈNCIA"
+                            }
+                    }
+            }
+    ],
+    "publisher" : "Z22222222@46024@office",
+    "ID" : "2022-06-23T10:13:14.988Z@X202206081@Z22222222@46024@event",
+    "assetType" : "trackableEvent",
+    "version" : "0.0",
+    "userId" : "62531d0242895e3f2f030a4c"
+}

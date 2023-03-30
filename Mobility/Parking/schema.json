@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Mobility/Parking/schema.json",
+  "title": "DataPorts - Parking schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "parkingID": {
+          "type": "number",
+          "description": "Parking number ID; can be 1 or 2"
+        },
+        "capacity": {
+          "type": "number",
+          "description": "Parking capacity"
+        },
+        "datetimeSlot": {
+          "type": "string",
+          "description": "String representing the date and time slot within that day"
+        },
+        "minimumNonReserved": {
+          "type": "number",
+          "description": "Minimum occupancy observed for non-reserved spaces during this time slot"
+        },
+        "maximumNonReserved": {
+          "type": "number",
+          "description": "Maximum occupancy observed for non-reserved spaces during this time slot"
+        },
+        "meanNonReserved": {
+          "type": "number",
+          "description": "Mean of occupied non-reserved spots for this time slot"
+        },
+        "percentageOfNonReserved": {
+          "type": "number",
+          "description": "Percentage of occupied non-reserved spots for this time slot"
+        },
+        "reservedSpots": {
+          "type": "number",
+          "description": "Occupancy of reserved spots"
+        },
+        "percentageOfReserved": {
+          "type": "number",
+          "description": "Percentage of occupied reserved spots for this time slot"
+        },
+        "overallTakenParkingSpots": {
+          "type": "number",
+          "description": "Overall (reserved&non-reserved) taken parking spots"
+        },
+        "percentageOfTakenSpots": {
+          "type": "number",
+          "description": "Percentage of occupied spots (reserved&non-reserved) for this time slot"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "parkingID",
+    "capacity",
+    "datetimeSlot",
+    "minimumNonReserved",
+    "maximumNonReserved",
+    "meanNonReserved",
+    "percentageOfNonReserved",
+    "reservedSpots",
+    "percentageOfReserved",
+    "overallTakenParkingSpots",
+    "percentageOfTakenSpots"
+  ]
+}

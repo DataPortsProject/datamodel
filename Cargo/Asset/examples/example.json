@@ -1,0 +1,18 @@
+{
+  "id": "asset-gdk24qaurt43",
+  "type": "asset",
+  "description": "string",
+  "isoCode": "string",
+  "size": "string",
+  "category": "string",
+  "subcategory": "string",
+  "account": "string",
+  "pairingStatus": "string",
+  "deviceStatus": "string",
+  "currentServiceLevel": "string",
+  "lastEventDate": "2021-07-05T18:00:00",
+  "lastGpsLatitude": 2021,
+  "lastGpsLongitude": 2021,
+  "lastGpsDate": "2021-07-05T18:00:00",
+  "lastGsmDate": "2021-07-05T18:00:00"
+}

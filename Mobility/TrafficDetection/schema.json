@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Mobility/TrafficDetection/schema.json",
+  "title": "DataPorts - TrafficDetection schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "trafficDetectionDevice": {
+          "type": "object",
+          "properties": {
+            "deviceID": {
+              "type": "number",
+              "description": "The id of the device"
+            },
+            "deviceName": {
+              "type": "string",
+              "description": "The name of the device"
+            },
+            "latitude": {
+              "type": "number",
+              "description": "Latitude where the device is located"
+            },
+            "longtitude": {
+              "type": "number",
+              "description": "Longtitude where the device is located"
+            }
+          },
+          "description": "Relevant traffic detection device"
+        },
+        "numberOfRecords": {
+          "type": "number",
+          "description": "The amount of vehicles the device detected during last timeframe"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of the most recent calculation update"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "deviceID",
+    "latitude",
+    "longtitude",
+    "trafficDetectionDevice",
+    "numberOfRecords",
+    "timestamp"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "string",
+  "type": "event",
+  "name": "string",
+  "equipment": "string",
+  "device": "string",
+  "firmwareVersion": "string",
+  "communicationDate": "2021-07-05T18:00:00",
+  "communicationType": "string",
+  "lastmodifiedDate": "2021-07-05T18:00:00",
+  "eventDate": "2021-07-05T18:00:00",
+  "eventType": "string",
+  "sensorName": "string",
+  "sensorValue": "string",
+  "sensorValues": "",
+  "gpsLatitude": 2021,
+  "gpsLongitude": 2021
+}

@@ -1,0 +1,6 @@
+{
+  "id": "bookingequipment-9i1eukxugwic",
+  "type": "bookingequipment",
+  "booking": "string",
+  "equipment": "string"
+}

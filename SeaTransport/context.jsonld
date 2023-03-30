@@ -1,0 +1,25 @@
+{
+    "@context": {
+        "BULK CARRIER": "https://dataports-project.eu/dataModel.SeaTransport#BULK CARRIER",
+        "CHEMICAL TANKER": "https://dataports-project.eu/dataModel.SeaTransport#CHEMICAL TANKER",
+        "CONTAINER": "https://dataports-project.eu/dataModel.SeaTransport#CONTAINER",
+        "DRY BULK": "https://dataports-project.eu/dataModel.SeaTransport#DRY BULK",
+        "FULL CONTAINER": "https://dataports-project.eu/dataModel.SeaTransport#FULL CONTAINER",
+        "GENERAL CARGO NON SPECIALIZED": "https://dataports-project.eu/dataModel.SeaTransport#GENERAL CARGO NON SPECIALIZED",
+        "IMO": "https://dataports-project.eu/dataModel.SeaTransport#IMO",
+        "LG TANKER": "https://dataports-project.eu/dataModel.SeaTransport#LG TANKER",
+        "LIQUID BULK": "https://dataports-project.eu/dataModel.SeaTransport#LIQUID BULK",
+        "MULTI-DECKER": "https://dataports-project.eu/dataModel.SeaTransport#MULTI-DECKER",
+        "OIL TANKER": "https://dataports-project.eu/dataModel.SeaTransport#OIL TANKER",
+        "shipName": "https://dataports-project.eu/dataModel.SeaTransport#shipName",
+        "shipTypeCategory": {
+            "@id": "https://dataports-project.eu/dataModel.SeaTransport#shipTypeCategory",
+            "@type": "@vocab"
+        },
+        "shipTypeClass": {
+            "@id": "https://dataports-project.eu/dataModel.SeaTransport#shipTypeClass",
+            "@type": "@vocab"
+        }
+    },
+    "generatedAt": "2022-09-12T10:09:16+00:00"
+}

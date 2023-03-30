@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/PortManagement/GateEvent/schema.json",
+  "title": "DataPorts - GateEvent schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "vehicle": {
+          "type": "object",
+          "properties": {
+            "registrationNumber": {
+              "type": "string",
+              "description": "License plate"
+            },
+            "maker": {
+              "type": "string",
+              "description": "Vehicle maker"
+            },
+            "model": {
+              "type": "string",
+              "description": "Vehicle model"
+            },
+            "colour": {
+              "type": "string",
+              "description": "Vehicle colour"
+            },
+            "company": {
+              "type": "string",
+              "description": "Company the vehicle belongs to"
+            },
+            "vehicleType": {
+              "type": "string",
+              "enum": [
+                "Car",
+                "Motorbike",
+                "Container Truck",
+                "TIR Truck",
+                "THPA Car",
+                "THPA Heavy-duty",
+                "Taxi Van",
+                "Taxi",
+                "Unspecified"
+              ],
+              "description": "Type of vehicle"
+            }
+          },
+          "description": "Details of the vehicle (passing a Gate)"
+        },
+        "entryACU": {
+          "type": "string",
+          "enum": [
+            "Gate 10A - Car Entrance",
+            "Gate 16 - Entrance #1",
+            "Gate 16 - Entrance #2",
+            "Gate 16 - Entrance #3",
+            "Gate 16 - Entrance #4",
+            "Gate 16 - Pedestrians",
+            "Gate 10A - Truck Entrance",
+            "Gate 10A - Pedestrians",
+            "CT Gate - Test",
+            "Out/In for TAS",
+            "SMIRNI Gate - Entrance #1",
+            "SMIRNI Gate - Entrance #2",
+            "SMIRNI Gate - Entrance #3",
+            "SMIRNI Gate - Entrance #4"
+          ],
+          "description": "Entry Gate sensor ID"
+        },
+        "entryDatetime": {
+          "type": "string",
+          "description": "Date/time of entrance"
+        },
+        "exitACU": {
+          "type": "string",
+          "enum": [
+            "Gate 10A - Exit",
+            "Gate 16 - Exit #1",
+            "Gate 16 - Exit #2",
+            "Gate 16 - Pedestrians",
+            "Gate 10A - Pedestrians",
+            "Out/In for TAS",
+            "SMIRNI Gate - Exit #4",
+            "SMIRNI Gate - Exit #3",
+            "SMIRNI Gate - Exit #2",
+            "SMIRNI Gate - Exit #1"
+          ],
+          "description": "Exit Gate sensor ID"
+        },
+        "exitDatetime": {
+          "type": "string",
+          "description": "Date/time of exit"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "vehicle",
+    "entryACU",
+    "entryDatetime"
+  ]
+}

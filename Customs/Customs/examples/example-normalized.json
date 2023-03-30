@@ -1,0 +1,120 @@
+{
+  "id": "urn:ngsi-ld:Customs:2020",
+  "type": "Customs",
+  "flow": {
+    "type": "Text",
+    "value": "E"
+  },
+  "year": {
+    "type": "Number",
+    "value": 20
+  },
+  "month": {
+    "type": "Number",
+    "value": 01
+  },
+  "customsProvince": {
+    "type": "Number",
+    "value": 28
+  },
+  "documentAdmissionDate": {
+    "type": "DateTime",
+    "value": "200120"
+  },
+  "statisticsPosition": {
+    "type": "Number",
+    "value": 106398000
+  },
+  "declarationType": {
+    "type": "Text",
+    "value": "D"
+  },
+  "origiDestinationCountry": {
+    "type": "Text",
+    "value": "MX"
+  },
+  "originExpeditionCountry": {
+    "type": "Text",
+    "value": "ES"
+  },
+  "originDestinationProvince": {
+    "type": "Text",
+    "value": "02"
+  },
+  "customsRegimeRequested": {
+    "type": "Text",
+    "value": "10"
+  },
+  "precedingRegimeRequested": {
+    "type": "Text",
+    "value": "00"
+  },
+  "weight": {
+    "type": "Number",
+    "value": 000000000253000
+  },
+  "unitNumber": {
+    "type": "Number",
+    "value": 000000000000000
+  },
+  "statisticalValue": {
+    "type": "Number",
+    "value": 000005173700
+  },
+  "invoiceValue": {
+    "type": "Number",
+    "value": 000000000000
+  },
+  "countryCurrency": {
+    "type": "Text",
+    "value": "EUR"
+  },
+  "containerID": {
+    "type": "Number",
+    "value": 0
+  },
+  "transportRegime": {
+    "type": "Text",
+    "value": "A"
+  },
+  "transportModeOnBorders": {
+    "type": "Text",
+    "value": "4"
+  },
+  "countryTransportMode": {
+    "type": "Text",
+    "value": "3"
+  },
+  "transportNationality": {
+    "type": "Text",
+    "value": "MX"
+  },
+  "exchangeZone": {
+    "type": "Text",
+    "value": "T"
+  },
+  "transactionNature": {
+    "type": "Text",
+    "value": "11"
+  },
+  "deliveryConditions": {
+    "type": "Text",
+    "value": "FOB"
+  },
+  "contingent": {
+    "type": "Text",
+    "value": "092776"
+  },
+  "tariffPreference": {
+    "type": "Text",
+    "value": "300"
+  },
+  "vesselFreight": {
+    "type": "Text",
+    "value": "000000000000"
+  },
+  "fiscalAddressProvince": {
+    "type": "Text",
+    "value": "02"
+  }
+}

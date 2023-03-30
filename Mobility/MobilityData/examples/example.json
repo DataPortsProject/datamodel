@@ -1,0 +1,22 @@
+{
+  "id": "urn:ngsi-ld:DataSource:MobilityData",
+  "type": "MobilityData",
+  "distinctUsers": 746,
+  "voiceIn": 0,
+  "voiceOut": 3,
+  "smsIn": 0,
+  "smsOut": 0,
+  "bytesUp": 463912241,
+  "bytesDown": 3792966198,
+  "cellMunicipality": "KORDELIOU - EUOSMOU",
+  "cellLat": "40.66564647",
+  "cellLon": "22.9070469",
+  "prevCellMunicipality": "NULL",
+  "prevCellLlat": "NULL",
+  "prevCellLon": "NULL",
+  "timePeriod": "20",
+  "eventDate": "20200204",
+  "weekDay": "3",
+  "isWeekend": "0",
+  "isBankHoliday": "0"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "urn:ngsi-ld:TrackableEvent:MRKU9603164:20000P0002103000480:1666847885000",
+  "type": "TrackableEvent",
+  "attributes": [
+    { "name": "geolocation", "value": "true" }
+  ],
+  "eventType": "sensor",
+  "location": {
+      "position": {
+        "type": "Point",
+        "coordinates": [49.287998, -123.098679]
+      }
+  },
+  "performedTime": "2022-10-27T05:18:05Z",
+  "transportUnits": [
+    { "transportUnitID": "MRKU9603164" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "urn:ngsi-ld:ThPA:GateEvent:2023",
+  "type": "GateEvent",
+  "vehicle": {
+    "registrationNumber": "93f4b7ae187421826c9c22f143e81ddf",
+    "maker": "BMW",
+    "model": "316",
+    "colour": "",
+    "company": "",
+    "vehicleType": "Car"
+  },
+  "entryACU": "Gate 10A - Car Entrance",
+  "entryDatetime": "20230101072232",
+  "exitACU": "Gate 10A - Exit",
+  "exitDatetime": "20230102072231"
+}

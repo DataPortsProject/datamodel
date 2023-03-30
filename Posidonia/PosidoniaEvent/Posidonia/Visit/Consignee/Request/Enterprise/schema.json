@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Posidonia/PosidoniaEvent/Posidonia/Visit/Consignee/Request/Enterprise/schema.json",
+  "title": "DataPorts - PosidoniaEvent schema",
+  "description": "Data Model that will cover one of the sub-entities used by Request entity.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "enterpriseID": {
+          "type": "number",
+          "description": "Internal ID of the Enterprise. Numeric (Long)"
+        },
+        "enterpriseCIF": {
+          "type": "number",
+          "description": "ID Number (String)"
+        },
+        "enterpriseName": {
+          "type": "string",
+          "description": "Name of the enterprise"
+        },
+        "enterprisePhoneNumber": {
+          "type": "string",
+          "description": "String"
+        },
+        "enterpriseEmail": {
+          "type": "string",
+          "description": "String"
+        }
+      }
+    }
+  ],
+  "required": ["enterpriseID", "enterpriseCIF", "enterpriseName"]
+}

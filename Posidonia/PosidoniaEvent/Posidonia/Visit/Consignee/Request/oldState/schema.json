@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Posidonia/PosidoniaEvent/Posidonia/Visit/Consignee/Request/oldState/schema.json",
+  "title": "DataPorts - PosidoniaEvent schema",
+  "description": "Data Model that will cover one of the sub-entities used by Request entity.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Code for the old state"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description for the old state"
+        }
+      }
+    }
+  ],
+  "required": ["code", "description"]
+}

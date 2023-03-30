@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://egitlab.iti.es/dataports/data_processing/datamodel/-/tree/master/Cargo/Asset/schema.json",
+  "title": "DataPorts - Asset schema",
+  "description": "MISSING",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Equipment number"
+        },
+        "isoCode": {
+          "type": "string",
+          "description": "ISO code"
+        },
+        "size": {
+          "type": "string",
+          "description": "Size of equipment"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of the equipment"
+        },
+        "subcategory": {
+          "type": "string",
+          "description": "Subcategory of the equipment"
+        },
+        "account": {
+          "type": "string",
+          "description": "Asset owner's account"
+        },
+        "pairingStatus": {
+          "type": "string",
+          "description": "Pairing with an IoT device"
+        },
+        "deviceStatus": {
+          "type": "string",
+          "description": "Operational status of the paired IoT device"
+        },
+        "currentServiceLevel": {
+          "type": "string",
+          "description": "Measurement and reporting scheme of the device"
+        },
+        "lastEventDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last event timestamp"
+        },
+        "lastGpsLatitude": {
+          "type": "number",
+          "description": "Last geolocation latitude"
+        },
+        "lastGpsLongitude": {
+          "type": "number",
+          "description": "Last geolocation longitude"
+        },
+        "lastGpsDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last position timestamp"
+        },
+        "lastGsmDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "lastgsmdate"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type"
+  ]
+}

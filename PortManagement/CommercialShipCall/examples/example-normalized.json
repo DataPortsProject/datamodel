@@ -1,0 +1,70 @@
+    {
+        "id": "urn:ngsi-ld:ThPA:CommercialShipCall",
+        "type": "CommercialShipCall",
+        "cfEmforta": {
+            "type": "Number",
+            "value": 31,
+            "metadata": {}
+        },
+        "cfEmpty": {
+            "type": "Number",
+            "value": 0,
+            "metadata": {}
+        },
+        "cfTonnage": {
+            "type": "Number",
+            "value": 465,
+            "metadata": {}
+        },
+        "cfValue": {
+            "type": "Number",
+            "value": 31,
+            "metadata": {}
+        },
+        "emporDescr": {
+            "type": "Text",
+            "value": "20 FULL",
+            "metadata": {}
+        },
+        "endWork": {
+            "type": "Text",
+            "value": "2023-01-03T06:30:00",
+            "metadata": {}
+        },
+        "portCall": {
+            "type": "StructuredValue",
+            "value": {
+                "vessel": {
+                    "shipName": "ATLANTIC MONACO",
+                    "IMO": 9356658,
+                    "shipTypeCategory": "CONTAINER",
+                    "shipTypeClass": "FULL CONTAINER"
+                },
+                "arrivalDate": "2022-12-28T16:53:00",
+                "departureDate": "2023-01-03T08:17:00",
+                "arrivalDateScheduled": "2022-12-28T16:53:00",
+                "departureDateScheduled": "2023-01-03T08:17:00"
+            },
+            "metadata": {}
+        },
+        "startWork": {
+            "type": "Text",
+            "value": "2023-01-02T07:50:00",
+            "metadata": {}
+        },
+        "timeApodesi": {
+            "type": "Text",
+            "value": "2023-01-01T07:53:00",
+            "metadata": {}
+        },
+        "timeProsdesi": {
+            "type": "Text",
+            "value": "2022-12-31T14:58:00",
+            "metadata": {}
+        },
+        "workDescr": {
+            "type": "Text",
+            "value": "DEMBARKATION-UNLOADING",
+            "metadata": {}
+        }
+    }

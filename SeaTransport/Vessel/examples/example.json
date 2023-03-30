@@ -1,0 +1,20 @@
+{
+  "id": "vessel-plz3o3utlc2k",
+  "type": "vessel",
+  "shipName": "string",
+  "IMO": 2021,
+  "shipTypeCategory": [
+    "CONTAINER",
+    "GENERAL CARGO NON SPECIALIZED",
+    "LIQUID BULK",
+    "DRY BULK"
+  ],
+  "shipTypeClass": [
+    "MULTI-DECKER",
+    "CHEMICAL TANKER",
+    "FULL CONTAINER",
+    "OIL TANKER",
+    "BULK CARRIER",
+    "LG TANKER"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+    "@context": {
+        "Air": "https://dataports-project.eu/dataModel.LandTransport#Air",
+        "Car": "https://dataports-project.eu/dataModel.LandTransport#Car",
+        "Container Truck": "https://dataports-project.eu/dataModel.LandTransport#Container Truck",
+        "Inland": "https://dataports-project.eu/dataModel.LandTransport#Inland",
+        "Motorbike": "https://dataports-project.eu/dataModel.LandTransport#Motorbike",
+        "Ocean": "https://dataports-project.eu/dataModel.LandTransport#Ocean",
+        "Prepaid": "https://dataports-project.eu/dataModel.LandTransport#Prepaid",
+        "THPA Car": "https://dataports-project.eu/dataModel.LandTransport#THPA Car",
+        "THPA Heavy-duty": "https://dataports-project.eu/dataModel.LandTransport#THPA Heavy-duty",
+        "TIR Truck": "https://dataports-project.eu/dataModel.LandTransport#TIR Truck",
+        "Taxi": "https://dataports-project.eu/dataModel.LandTransport#Taxi",
+        "Taxi Van": "https://dataports-project.eu/dataModel.LandTransport#Taxi Van",
+        "Unspecified": "https://dataports-project.eu/dataModel.LandTransport#Unspecified",
+        "airline": "https://dataports-project.eu/dataModel.LandTransport#airline",
+        "code": "https://dataports-project.eu/dataModel.LandTransport#code",
+        "collect": "https://dataports-project.eu/dataModel.LandTransport#collect",
+        "colour": "https://dataports-project.eu/dataModel.LandTransport#colour",
+        "company": "https://dataports-project.eu/dataModel.LandTransport#company",
+        "ctnTyp": "https://dataports-project.eu/dataModel.LandTransport#ctnTyp",
+        "currencyVal": "https://dataports-project.eu/dataModel.LandTransport#currencyVal",
+        "descriptionsOfGoods": "https://dataports-project.eu/dataModel.LandTransport#descriptionsOfGoods",
+        "destinationAirport": "https://dataports-project.eu/dataModel.LandTransport#destinationAirport",
+        "destinationCountry": "https://dataports-project.eu/dataModel.LandTransport#destinationCountry",
+        "dischargePort": "https://dataports-project.eu/dataModel.LandTransport#dischargePort",
+        "flighNumber": "https://dataports-project.eu/dataModel.LandTransport#flighNumber",
+        "incoterm": "https://dataports-project.eu/dataModel.LandTransport#incoterm",
+        "loadingPort": "https://dataports-project.eu/dataModel.LandTransport#loadingPort",
+        "maker": "https://dataports-project.eu/dataModel.LandTransport#maker",
+        "mixed": "https://dataports-project.eu/dataModel.LandTransport#mixed",
+        "model": "https://dataports-project.eu/dataModel.LandTransport#model",
+        "numAwb": "https://dataports-project.eu/dataModel.LandTransport#numAwb",
+        "originAirport": "https://dataports-project.eu/dataModel.LandTransport#originAirport",
+        "originCountry": "https://dataports-project.eu/dataModel.LandTransport#originCountry",
+        "packTyp": "https://dataports-project.eu/dataModel.LandTransport#packTyp",
+        "reefer": "https://dataports-project.eu/dataModel.LandTransport#reefer",
+        "registration": "https://dataports-project.eu/dataModel.LandTransport#registration",
+        "registrationNumber": "https://dataports-project.eu/dataModel.LandTransport#registrationNumber",
+        "seal": "https://dataports-project.eu/dataModel.LandTransport#seal",
+        "shipComp": "https://dataports-project.eu/dataModel.LandTransport#shipComp",
+        "sumGrossWeight": "https://dataports-project.eu/dataModel.LandTransport#sumGrossWeight",
+        "sumQuantity": "https://dataports-project.eu/dataModel.LandTransport#sumQuantity",
+        "sumValueGoods": "https://dataports-project.eu/dataModel.LandTransport#sumValueGoods",
+        "termsOfPayment": {
+            "@id": "https://dataports-project.eu/dataModel.LandTransport#termsOfPayment",
+            "@type": "@vocab"
+        },
+        "transportType": {
+            "@id": "https://dataports-project.eu/dataModel.LandTransport#transportType",
+            "@type": "@vocab"
+        },
+        "udWeight": "https://dataports-project.eu/dataModel.LandTransport#udWeight",
+        "vehicleType": {
+            "@id": "https://dataports-project.eu/dataModel.LandTransport#vehicleType",
+            "@type": "@vocab"
+        }
+    },
+    "generatedAt": "2022-09-12T10:17:58+00:00"
+}

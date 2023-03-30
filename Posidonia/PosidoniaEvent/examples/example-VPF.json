@@ -1,0 +1,60 @@
+{
+    "id": "urn:ngsi-ld:Posidonia:63:V:1660298917023",
+    "type": "PosidoniaEvent",
+    "AisAntena": {
+        "name": "aishub",
+        "version": 0
+    },
+    "Port": {
+        "portCode": "V",
+        "portName": "Valencia Port Fundation"
+    },
+    "PortAuthority": {
+        "portAuthorityCode": 63,
+        "portAuthorityName": "VPF"
+    },
+    "PortZone": {
+        "geometry": "24",
+        "geometryDescription": "MUELLE PRINCIPE FELIPE"
+    },
+    "Posidonia": {
+        "update": 1660298917023,
+        "updateAsDate": "12/08/2022 12:08:37",
+        "eventType": {
+            "value": 10,
+            "description": "DOCK_START_OUT"
+        },
+        "eventVessels": [
+            {
+                "vesselName": "",
+                "vesselType": {
+                    "value": 0,
+                    "description": "NOT_AVAILABLE"
+                },
+                "IMO": 0,
+                "MMSI": 225437000,
+                "toStern": 0,
+                "toPort": 0,
+                "toStarboard": 0,
+                "callSign": "",
+                "draught": 0,
+                "accuracy": false,
+                "raim": false,
+                "radio": 59916,
+                "dte": false,
+                "speed": 1.6,
+                "longitude": -0.31908166,
+                "latitude": 39.43442,
+                "destination": "",
+                "course": 309.5,
+                "heading": 17,
+                "turn": 129,
+                "month": 0,
+                "day": 0,
+                "hour": 0,
+                "minute": 0,
+                "second": 37
+            }
+        ]
+    }
+}
